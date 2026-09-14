@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "domain": "Prevention & Protection",
+    "scenario": "An OT security audit reveals that multiple manufacturing plants use shared, non-unique passwords for PLC and HMI access, violating SABIC cybersecurity standards.",
+    "steps": [
+      "Escalate to Plant Leadership and Corporate Cybersecurity; direct all plants to immediately comply with SABIC's password standards.",
+      "Conduct a rapid assessment of credential practices across all OT assets in affected plants.",
+      "Enforce immediate interim controls: mandate unique credentials for all OT access and restrict shared accounts."
+    ],
+    "rationale": "NIST Protect requires least-privilege and strong authentication for OT environments; shared credentials represent a critical vulnerability across manufacturing.",
+    "areaMeasured": "OT credential security and governance standardization.",
+    "ifCorrect": "Shows alignment with enterprise OT security standards and Cybersecurity partnership.",
+    "ifWrong": "Indicates fragmented OT controls or underestimation of shared-credential risk."
+  },
+  {
+    "id": 2,
+    "domain": "Prevention & Protection",
+    "scenario": "A manufacturing engineer reports that a vendor performing remote maintenance connected an unauthorized laptop directly to the plant DCS network.",
+    "steps": [
+      "Immediately notify Plant Security and Corporate Cybersecurity; disconnect the unauthorized device from the DCS network.",
+      "Preserve evidence of the unauthorized connection; conduct a breach assessment on the DCS network.",
+      "Investigate whether the vendor's device introduced malware or accessed restricted OT systems."
+    ],
+    "rationale": "Unauthorized OT network connections represent a critical physical-cyber risk; NIST Protect requires immediate containment and governance of third-party OT access.",
+    "areaMeasured": "Physical-cyber convergence and vendor-access governance.",
+    "ifCorrect": "Shows proper breach-response handling and cross-functional OT security coordination.",
+    "ifWrong": "Indicates failure to recognize physical-cyber breach indicators or underestimating DCS exposure."
+  },
+  {
+    "id": 3,
+    "domain": "Prevention & Protection",
+    "scenario": "A new manufacturing facility is being commissioned, and the project team plans to connect OT systems directly to the corporate IT network for convenience.",
+    "steps": [
+      "Engage Corporate Cybersecurity during the commissioning phase to review OT/IT connectivity architecture.",
+      "Assess cybersecurity risks of direct OT/IT connectivity; identify required segmentation controls.",
+      "Enforce OT/IT network segmentation per SABIC's cybersecurity standards before go-live."
+    ],
+    "rationale": "NIST Protect requires OT/IT segmentation to limit cyber-attack blast radius; addressing connectivity during commissioning prevents costly retrofits and reduces operational risk.",
+    "areaMeasured": "OT/IT segmentation governance and commissioning security.",
+    "ifCorrect": "Shows proactive security-by-design thinking and Cybersecurity partnership.",
+    "ifWrong": "Indicates underestimation of OT/IT connectivity risks or bypassing cybersecurity in commissioning."
+  },
+  {
+    "id": 4,
+    "domain": "Prevention & Protection",
+    "scenario": "Phishing simulation results show that 45% of plant operations staff clicked malicious links, significantly above the SABIC acceptable threshold.",
+    "steps": [
+      "Report findings to Plant Leadership and Corporate Cybersecurity; escalate as a security awareness risk.",
+      "Analyze results by plant, role, and shift to identify highest-risk cohorts.",
+      "Mandate targeted security awareness training with manufacturing-specific phishing scenarios."
+    ],
+    "rationale": "NIST Protect requires continuous workforce security awareness; high click rates in manufacturing indicate systemic gaps requiring structured intervention.",
+    "areaMeasured": "Security awareness maturity and manufacturing human-risk governance.",
+    "ifCorrect": "Shows structured approach to reducing human risk through training and technical controls.",
+    "ifWrong": "Indicates dismissal of awareness gaps or over-reliance on technical controls alone."
+  },
+  {
+    "id": 5,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A cyber attack shuts down the SCADA system controlling a key chemical manufacturing line, halting production and triggering safety interlocks.",
+    "steps": [
+      "Verify plant safety, process stability, and operator control of the affected manufacturing line; notify Corporate Cybersecurity and plant leadership.",
+      "Activate the OT cyber incident response process; isolate the compromised SCADA system and engage the CERT team.",
+      "Assess potential lateral movement across OT networks; determine whether additional manufacturing systems are impacted."
+    ],
+    "rationale": "OT incident response prioritizes safety first, then containment to prevent spread. NIST Respond/Recover requires validation before restoration to avoid unsafe manufacturing conditions.",
+    "areaMeasured": "OT crisis response and production-safety governance.",
+    "ifCorrect": "Shows proper safety-first escalation and OT Cybersecurity partnership.",
+    "ifWrong": "Suggests bypassing Cybersecurity for OT decisions or rushing recovery without safety validation."
+  },
+  {
+    "id": 6,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "Ransomware encrypts engineering workstations used for process control configuration in a polymer manufacturing plant. Plant operations remain stable but engineering access is lost.",
+    "steps": [
+      "Notify Corporate Cybersecurity; isolate affected engineering workstations from OT and IT networks.",
+      "Activate the OT cyber incident response process; assess whether PLC, DCS, or SCADA systems are impacted.",
+      "Determine scope of engineering data loss and whether process configurations require restoration from validated backups."
+    ],
+    "rationale": "Engineering workstation compromise threatens process control integrity; NIST OT guidance requires containment and forensic validation before restoration to prevent unsafe configurations.",
+    "areaMeasured": "OT engineering-system resilience and recovery governance.",
+    "ifCorrect": "Shows understanding of OT engineering risks and the need for forensic validation before recovery.",
+    "ifWrong": "Indicates rushing recovery without Cybersecurity validation or underestimating process-control risks."
+  },
+  {
+    "id": 7,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A DDoS attack disrupts the manufacturing execution system (MES) used to track production orders, inventory, and quality data across multiple plants.",
+    "steps": [
+      "Engage Cybersecurity and DDoS mitigation providers to initiate countermeasures.",
+      "Activate crisis-management governance with executive and plant leadership ownership.",
+      "Implement manual production tracking and quality-recording procedures to sustain manufacturing continuity."
+    ],
+    "rationale": "Operational resilience requires command structure, then stabilization, then continuity, then validated recovery, consistent with NIST Respond best practices.",
+    "areaMeasured": "Leadership decision-making under pressure and manufacturing continuity.",
+    "ifCorrect": "Shows balanced thinking: Cybersecurity engagement with manufacturing operational continuity.",
+    "ifWrong": "Indicates reactive behavior, production paralysis, or bypassing Cybersecurity governance."
+  },
+  {
+    "id": 8,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "OT logs show that a maintenance contractor account is downloading bulk process recipes and production parameters outside of working hours.",
+    "steps": [
+      "Escalate confidentially to Corporate Cybersecurity, Legal, and Plant Leadership.",
+      "Preserve OT access logs, session records, and file-transfer evidence.",
+      "Investigate the scope and legitimacy of the activity; assess whether process IP has been exfiltrated."
+    ],
+    "rationale": "Insider/third-party OT threats require evidence preservation and governance before containment to protect legal defensibility and IP integrity.",
+    "areaMeasured": "Insider-risk governance and OT IP protection.",
+    "ifCorrect": "Shows structured evidence handling, legal alignment, and OT IP protection response.",
+    "ifWrong": "Indicates impulsive account termination or failure to preserve evidence for investigation."
+  },
+  {
+    "id": 9,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupts the manufacturing execution system, halting production scheduling and inventory tracking across three plants.",
+    "steps": [
+      "Notify Corporate Cybersecurity and activate the cyber incident response process; isolate the affected MES.",
+      "Assess impact on production scheduling, inventory, and quality systems; validate whether the incident remains active.",
+      "Implement manual production scheduling and inventory-tracking procedures to sustain plant operations."
+    ],
+    "rationale": "NIST Recover functions require validated restoration before reactivation; manual continuity procedures protect production throughput during recovery.",
+    "areaMeasured": "Manufacturing continuity and recovery governance.",
+    "ifCorrect": "Shows balanced recovery thinking with plant-operations focus.",
+    "ifWrong": "Indicates operational paralysis, premature reconnection, or failure to implement continuity procedures."
+  },
+  {
+    "id": 10,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "An OT workstation is cleaned and rebuilt after a malware infection. The plant team wants to immediately reconnect it to the DCS network to restore full production control.",
+    "steps": [
+      "Ensure Corporate Cybersecurity completes forensic validation before any reconnection is authorized.",
+      "Validate malware removal, credential resets, patch application, and baseline hardening on the workstation.",
+      "Conduct controlled testing with Plant Operations and Cybersecurity to confirm safe communication with PLCs, HMIs, and DCS systems."
+    ],
+    "rationale": "NIST OT recovery guidance requires independent validation and controlled reintroduction; premature reconnection risks reinfection or unsafe process conditions.",
+    "areaMeasured": "Separation of duties and safe OT restoration.",
+    "ifCorrect": "Shows understanding of dual validation (Cyber + OT) before production reconnection.",
+    "ifWrong": "Suggests unsafe reconnection driven by production pressure without cyber validation."
+  },
+  {
+    "id": 11,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "Following a ransomware incident affecting plant control systems, manufacturing leadership requests an immediate post-incident review to assess operational impact.",
+    "steps": [
+      "Confirm that restored OT and IT systems have passed integrity validation before convening the review.",
+      "Monitor plant OT networks for residual malware indicators and abnormal process behavior post-recovery.",
+      "Conduct a governance review with Cybersecurity, BC/DR, and Plant Leadership to evaluate recovery effectiveness and decision-making."
+    ],
+    "rationale": "NIST Recover and Improve practices require secure restoration validation before governance review; lessons learned drive long-term manufacturing resilience.",
+    "areaMeasured": "Post-incident governance and manufacturing learning culture.",
+    "ifCorrect": "Shows maturity in structured post-incident review and OT resilience improvement.",
+    "ifWrong": "Indicates lack of accountability, siloed thinking, or skipping restoration validation before review."
+  },
+  {
+    "id": 12,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident delays shipments of manufactured products to key customers, causing supply chain disruptions.",
+    "steps": [
+      "Activate crisis communication structure; align Plant and Supply Chain leadership on impact and recovery plan.",
+      "Brief internal stakeholders with consistent messaging on shipment delays, mitigation actions, and revised timelines.",
+      "Communicate proactively with affected customers and logistics partners on shipment impacts and recovery expectations."
+    ],
+    "rationale": "NIST guidance requires governance and situational awareness first, then internal alignment, external communication, and post-incident improvement.",
+    "areaMeasured": "Stakeholder communication and supply-chain continuity.",
+    "ifCorrect": "Shows strong crisis communication and customer-centric manufacturing recovery.",
+    "ifWrong": "Indicates reputational risk, customer-trust erosion, or avoidance of proactive communication."
+  }
+]

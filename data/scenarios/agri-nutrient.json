@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "domain": "Prevention & Protection",
+    "scenario": "You discover that OT teams across several agri‑nutrient plants follow different, non‑standard security practices, especially around USB use, engineering access, and password controls.",
+    "steps": [
+      "Escalate the governance issue to Plant Leadership, Corporate Cybersecurity. Direct all plants to immediately align with the published Cybersecurity Standard and Policy",
+      "Conduct a rapid assessment to identify high-risk deviations in USB usage, access methods, password controls, and access practices across all plants.",
+      "Enforce immediate interim controls for the highest-risk gaps, including restricted USB use, privileged-access enforcement, and temporary access-control standardization, then launch an enterprise OT security standardization program with defined compliance monitoring and audit mechanisms."
+    ],
+    "rationale": "The sequence follows NIST Protect and Govern functions by first establishing accountability, then identifying exposure areas, and finally reducing immediate risk while implementing governance and standardization measures.",
+    "areaMeasured": "Security governance and standardization.",
+    "ifCorrect": "Shows alignment with enterprise security governance and OT–Cybersecurity partnership.",
+    "ifWrong": "Indicates fragmented controls or misunderstanding of OT vs IT security."
+  },
+  {
+    "id": 2,
+    "domain": "Prevention & Protection",
+    "scenario": "A Board Member reports that their quarterly Board meeting materials — containing nutrient‑pricing models, Finance forecasts, HR compensation data, and strategic plans — were lost during international travel.\nThe device used to access the materials shows multiple failed overseas login attempts, suggesting potential unauthorized access.",
+    "steps": [
+      "Use iProtect and other means to report the incident. Notify Corporate Cybersecurity, Legal, Executive Leadership regarding the potential compromise of sensitive Board information.",
+      "Immediately disable device access, revoke active sessions and credentials, enforce password resets, and initiate remote lock or wipe procedures where technically possible.",
+      "Preserve authentication logs, travel records, access telemetry, and failed-login evidence to determine whether unauthorized access or data exfiltration occurred, then assess regulatory, legal, financial, and reputational exposure while coordinating controlled executive communications and remediation actions."
+    ],
+    "rationale": "NIST guidance prioritizes governance and containment first because sensitive executive information may present strategic, regulatory, and financial risks; forensic assessment follows containment to determine compromise scope before broader communications and remediation decisions are made.",
+    "areaMeasured": "Data‑breach response and regulatory awareness.",
+    "ifCorrect": "Shows understanding of breach validation, legal exposure, and containment.",
+    "ifWrong": "Suggests oversimplification or overreaction without proper investigation."
+  },
+  {
+    "id": 3,
+    "domain": "Prevention & Protection",
+    "scenario": "A strategic supplier reports receiving a fraudulent email that appears to come from your company’s procurement team, requesting updated bank account details for fertilizer payments.",
+    "steps": [
+      "Escalate the suspected business email compromise incident to Procurement, Corporate Cybersecurity and Legal teams.",
+      "Validate whether any payment instructions, supplier records, or financial transactions were modified or acted upon using independent verification procedures.",
+      "Contain the threat by blocking malicious domains, isolating compromised mailboxes, and preserving email headers, logs, and related evidence, then notify the affected supplier and reinforce payment-verification controls."
+    ],
+    "rationale": "The sequence reflects NIST Identify-Protect-Respond principles by first establishing governance, then assessing business impact, and finally containing the threat while strengthening preventive controls and stakeholder awareness.",
+    "areaMeasured": "Executive understanding of business‑email‑compromise",
+    "ifCorrect": "Shows the leader understands that BEC is a high‑risk financial and reputational threat requiring Cybersecurity‑led investigation, validation of email security posture, and coordinated communication with Procurement and the supplier.",
+    "ifWrong": "An overreaction that disrupts business continuity without addressing root causes."
+  },
+  {
+    "id": 4,
+    "domain": "Prevention & Protection",
+    "scenario": "A USB found in the plant parking lot contains internal OT network diagrams.",
+    "steps": [
+      "Treat the USB device as a potential malicious or sensitive-security incident and immedi-ately notify Plant Securityand Corporate Cybersecurity teams.",
+      "Secure the device using  evidence-handling procedures and prohibit insertion into operational or corporate systems.\nConduct breach assessment tests.",
+      "Assess whether the OT network diagrams represent current sensitive infrastructure information and determine possible sources of data leakage or insider involvement, then implement precautionary security measures including access reviews and physical-security validation."
+    ],
+    "rationale": "The sequence aligns with NIST Protect and Respond guidance by prioritizing secure escalation and evidence handling first, followed by investigation of exposure scope and implementation of preventive controls to reduce operational cyber risk.",
+    "areaMeasured": "Physical‑cyber convergence and breach escalation.",
+    "ifCorrect": "Shows proper breach handling and cross‑functional coordination.",
+    "ifWrong": "Indicates failure to recognize physical‑cyber breach indicators."
+  },
+  {
+    "id": 5,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A major partner costumer notified you that they unexpectedly received a file containing confidential formulation details for one of your premium agri nutrient blends, including nutrient ratios, application models, and internal pricing logic.",
+    "steps": [
+      "Notify Corporate Cybersecurity, Legal, and SABIC Executive Leadership, and activate the cyber crisis escalation process.",
+      "Preserve forensic evidence and restrict further access or sharing of the exposed formu-lation data. Review all product data exchanges with partners for any such cases.",
+      "Determine the scope, source, and business impact of the potential data exposure, then coordinate customer communications and remediation activities through approved leadership channels."
+    ],
+    "rationale": "The sequence follows NIST incident-response principles of governance → containment → investigation and remediation.",
+    "areaMeasured": "Executive escalation discipline and data‑breach governance.",
+    "ifCorrect": "Shows strong understanding of breach protocols, regulatory exposure, and the need for Cybersecurity‑led assessment.",
+    "ifWrong": "Indicates weak escalation culture, misunderstanding of Cybersecurity’s authority, or underestimation of data‑breach impact."
+  },
+  {
+    "id": 6,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "OT engineers report that a workstation used for engineering access in the ammonia unit suddenly displayed a ransomware message and locked up. They immediately isolated the device from the OT network. The unit is stable, and no alarms are triggered.",
+    "steps": [
+      "Verify plant safety, process stability, and operator control of the ammonia unit.",
+      "Escalate to Cybersecurity. CERT team to coordinate to isolate the infected workstation. Activate the OT cyber incident response process.",
+      "Assess potential lateral movement and determine whether additional OT or IT systems are affected, then begin controlled recovery only after containment and forensic validation are completed."
+    ],
+    "rationale": "OT incident response prioritizes safety first, followed by containment to prevent spread. Scoping and impact assessment must be confirmed before any controlled recovery begins, to avoid unsafe recovery actions.",
+    "areaMeasured": "Crisis chain‑of‑command and separation of duties.",
+    "ifCorrect": "Shows proper escalation discipline and respect for Cybersecurity’s authority.",
+    "ifWrong": "Suggests reliance on OT for cyber decisions or hesitation to escalate, increasing risk."
+  },
+  {
+    "id": 7,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A DDoS attack takes down the Customer ordering platform. IT teams are troubleshooting the outage, while operational delays are increasing.",
+    "steps": [
+      "Engage Cybersecurity teams and service providers to initiate DDoS mitigation controls.",
+      "Activate crisis-management and business continuity governance with  executive ownership.",
+      "Implement contingency procedures for customer orders, operations, and supply-chain continuity, then validate restoration stability and monitor for secondary or diversionary attacks."
+    ],
+    "rationale": "The sequence aligns with operational resilience best practices: establish command structure first, stabilize services second, and finally sustain business operations while validating secure recovery.",
+    "areaMeasured": "Leadership decision‑making under pressure and continuity planning.",
+    "ifCorrect": "Shows balanced thinking: Cybersecurity engagement + operational continuity.",
+    "ifWrong": "Indicates reactive behavior, operational paralysis, or bypassing Cybersecurity."
+  },
+  {
+    "id": 8,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "OT logs identify unusual downloads of proprietary fertilizer formulation data linked to a suspected insider account with privileged access. The activity appears inconsistent with normal operational duties.",
+    "steps": [
+      "Escalate the incident confidentially to Corporate Cybersecurity, HR, Legal, and authorized leadership.",
+      "Preserve logs, endpoint evidence, privileged-access records, and file-transfer activity.",
+      "Investigate the scope, intent, and legitimacy of the suspicious activity while maintaining confidentiality, then execute controlled access restrictions or disciplinary actions in coordination with HR and Legal."
+    ],
+    "rationale": "Insider-threat investigations require governance and evidence preservation before investigation and any resulting containment or personnel action, to protect investigative integrity, legal defensibility, and due process.",
+    "areaMeasured": "Insider‑risk governance and due‑process maturity.",
+    "ifCorrect": "Shows proper evidence handling, legal alignment, and structured insider‑risk response.",
+    "ifWrong": "Indicates impulsive action or mishandling of sensitive investigations."
+  },
+  {
+    "id": 9,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupts fertilizer dispatch operations.",
+    "steps": [
+      "Inform Cybersecurity and activate the cyber incident response management process.",
+      "Assess the impact on dispatch applications, ERP connectivity, inventory visibility, transportation scheduling, and plant loading operations. Cybersecurity teams to validate whether the incident remains active.",
+      "Implement business continuity including manual dispatch operations, alternate logistics workflows, and prioritized customer fulfillment, then restore normal dispatch operations only after Plant Operations, Disaster Recovery, and Corporate Cybersecurity jointly confirm operational stability, system integrity, and safe re-connection of affected systems."
+    ],
+    "rationale": "The sequence aligns with NIST Recover and Respond functions by first establishing coordinated governance, then assessing operational and cyber impacts, before implementing business continuity and restoring normal operations only after cybersecurity and operational validation are completed.",
+    "areaMeasured": "Business continuity and recovery governance.",
+    "ifCorrect": "Shows balanced recovery thinking and customer‑centric leadership.",
+    "ifWrong": "Indicates operational paralysis or governance‑only mindset."
+  },
+  {
+    "id": 10,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "An OT workstation is cleaned after a suspected cyber compromise.",
+    "steps": [
+      "Ensure Corporate Cybersecurity preserves forensic evidence. Plant Operations maintain operational continuity without reconnecting the workstation to production networks.",
+      "Validate that malware removal, patching, credential resets, baseline hardening, and recovery according to cybersecurity standards.",
+      "Conduct controlled testing by Plant Operations and Cybersecurity to confirm the workstation can safely communicate with PLCs, HMIs, and other OT assets without operational risk, then reintroduce the workstation into the production environment through the formal change-management approval process."
+    ],
+    "rationale": "NIST OT recovery guidance prioritizes evidence preservation and operational continuity before restoration activities; independent validation and controlled reintroduction are essential to prevent reinfection or unsafe process conditions.",
+    "areaMeasured": "Separation of duties and safe restoration.",
+    "ifCorrect": "Shows understanding of dual validation (Cyber + OT).",
+    "ifWrong": "Suggests unsafe reconnection or unnecessary replacement."
+  },
+  {
+    "id": 11,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "Operations resume following a ransomware incident affecting plant systems.",
+    "steps": [
+      "Confirm through Plant Operations and Corporate Cybersecurity teams that restored OT and IT systems have passed integrity validation, backup verification, and operational safety testing.",
+      "Monitor production operations and OT networks for residual malware indicators, abnormal process behavior or unstable communications.",
+      "Conduct recovery governance reviews involving Cybersecurity, BC/DR, and Plant Leadership teams to evaluate operational impact and recovery effectiveness, then implement long-term corrective actions such as OT segmentation improvements, backup resilience enhancements, and privileged-access strengthening."
+    ],
+    "rationale": "The sequence follows NIST Recover and Improve practices by validating secure restoration first, then stabilizing operations before conducting governance reviews and implementing long-term resilience improvements.",
+    "areaMeasured": "Post‑incident governance and learning culture.",
+    "ifCorrect": "Shows maturity in continuous improvement and risk alignment.",
+    "ifWrong": "Indicates lack of accountability or siloed thinking."
+  },
+  {
+    "id": 12,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident delays nutrient shipments to key customers.",
+    "steps": [
+      "Activate the crisis communication structure, align executive leadership, and validate business impact",
+      "Align internal stakeholders by briefing plant leadership, and customer-facing teams with consistent messaging, operational status, and decision guidance.",
+      "Communicate proactively with customers and suppliers regarding shipment impacts, mitigation actions, and recovery expectations, then share stabilization and recovery progress while capturing lessons learned to strengthen future effectiveness."
+    ],
+    "rationale": "The sequence follows NIST guidance to first establish governance and situational awareness, then coordinate internal alignment, and finally manage external communications while capturing lessons learned for continuous improvement.",
+    "areaMeasured": "Stakeholder communication and continuity.",
+    "ifCorrect": "Shows strong crisis communication and customer trust management.",
+    "ifWrong": "Indicates reputational risk or avoidance behavior."
+  }
+]

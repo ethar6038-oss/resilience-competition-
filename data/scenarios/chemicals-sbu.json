@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "domain": "Prevention & Protection",
+    "scenario": "An OT audit of Chemicals SBU facilities reveals that DCS historian servers have direct, uncontrolled internet connectivity to facilitate vendor remote support.",
+    "steps": [
+      "Escalate to SBU Plant Leadership and Corporate Cybersecurity; direct immediate disconnection of uncontrolled internet access.",
+      "Conduct a rapid assessment of all DCS historian and OT systems with uncontrolled external connectivity.",
+      "Implement compensating controls: enforce VPN-based vendor access, session monitoring, and network segmentation."
+    ],
+    "rationale": "NIST Protect requires OT/IT segmentation and controlled vendor access; direct internet connectivity to DCS historians is a critical vulnerability in chemical plant environments.",
+    "areaMeasured": "OT network segmentation and vendor-access governance in chemical plants.",
+    "ifCorrect": "Shows alignment with OT security standards and proactive risk-mitigation governance.",
+    "ifWrong": "Indicates fragmented OT security or underestimation of DCS internet-connectivity risk."
+  },
+  {
+    "id": 2,
+    "domain": "Prevention & Protection",
+    "scenario": "A Chemicals SBU EHS system audit reveals that incident reporting data is accessible to unauthorized external parties through an API misconfiguration.",
+    "steps": [
+      "Notify Corporate Cybersecurity and EHS Leadership; restrict external access to the EHS API immediately.",
+      "Assess the scope of EHS incident data exposed and regulatory obligations arising from the exposure.",
+      "Implement API security controls: authentication, access restriction, and monitoring."
+    ],
+    "rationale": "NIST Protect requires security controls for all external-facing systems; EHS data exposure creates regulatory, legal, and reputational risk in chemical operations.",
+    "areaMeasured": "API security governance and EHS data protection.",
+    "ifCorrect": "Shows alignment with API security principles and EHS data-protection obligations.",
+    "ifWrong": "Indicates underestimation of EHS API exposure or delayed action on misconfiguration."
+  },
+  {
+    "id": 3,
+    "domain": "Prevention & Protection",
+    "scenario": "A third-party chemical distribution partner used by the Chemicals SBU is found to have suffered a breach that exposed SABIC product pricing, customer allocations, and shipping schedules.",
+    "steps": [
+      "Notify Corporate Cybersecurity and SBU Leadership; instruct the distribution partner to immediately contain the breach.",
+      "Preserve evidence of the exposure; assess what SABIC commercial data was affected.",
+      "Evaluate regulatory and customer-notification obligations arising from the exposure."
+    ],
+    "rationale": "Third-party breaches exposing commercial and customer data create competitive and regulatory risk; NIST Govern and Protect require structured vendor-security governance.",
+    "areaMeasured": "Third-party commercial data security and distribution partner governance.",
+    "ifCorrect": "Shows understanding of vendor-security risks and contractual security requirements.",
+    "ifWrong": "Indicates overreliance on partner security without governance or contractual standards."
+  },
+  {
+    "id": 4,
+    "domain": "Prevention & Protection",
+    "scenario": "Phishing simulation results show that 39% of Chemicals SBU staff, including regulatory affairs and R&D personnel, submitted credentials.",
+    "steps": [
+      "Report findings to SBU Leadership and Corporate Cybersecurity; escalate as a regulatory and IP risk.",
+      "Analyze results by role to identify highest-risk regulatory, R&D, and commercial users.",
+      "Mandate targeted security awareness training with Chemicals SBU-specific scenarios."
+    ],
+    "rationale": "NIST Protect requires continuous awareness; high phishing rates in regulatory and R&D roles create elevated IP and compliance risk requiring structured intervention.",
+    "areaMeasured": "Security awareness maturity and chemicals human-risk governance.",
+    "ifCorrect": "Shows structured approach to reducing IP and regulatory human-risk through training and technical controls.",
+    "ifWrong": "Indicates dismissal of awareness gaps or over-reliance on technical controls without addressing human risk."
+  },
+  {
+    "id": 5,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A cyber attack disrupts the Chemicals SBU's process control system at a petrochemical facility, triggering safety shutdowns and halting production of base chemicals.",
+    "steps": [
+      "Verify plant safety, process stability, and operator control; notify Corporate Cybersecurity and Chemicals SBU Leadership immediately.",
+      "Activate the OT cyber incident response process; isolate the compromised process control system and engage the CERT team.",
+      "Assess potential lateral movement across OT and DCS networks; determine scope of operational impact."
+    ],
+    "rationale": "Chemical plant OT incidents prioritize safety first; NIST Respond/Recover requires containment and forensic validation before recovery to prevent unsafe chemical process conditions.",
+    "areaMeasured": "OT safety governance and chemical-plant crisis response.",
+    "ifCorrect": "Shows proper safety-first escalation and OT Cybersecurity partnership in chemical operations.",
+    "ifWrong": "Suggests bypassing Cybersecurity for OT decisions or rushing recovery without safety validation."
+  },
+  {
+    "id": 6,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "Ransomware encrypts the Chemicals SBU's laboratory information management system (LIMS), locking access to product quality data, regulatory test results, and customer certificates of analysis.",
+    "steps": [
+      "Notify Corporate Cybersecurity; isolate the LIMS and halt automated quality data feeds.",
+      "Assess which certificates of analysis and regulatory submissions are time-critical; implement manual quality-recording procedures.",
+      "Determine whether proprietary chemical formulations or regulatory test data were accessed or exfiltrated."
+    ],
+    "rationale": "LIMS compromise threatens regulatory compliance, product release, and customer trust in chemicals; NIST Respond/Recover requires containment, validation, and regulatory notification.",
+    "areaMeasured": "LIMS resilience and regulatory-data breach governance.",
+    "ifCorrect": "Shows understanding of LIMS risks, regulatory obligations, and customer-notification requirements.",
+    "ifWrong": "Suggests rushing LIMS restoration without forensic validation or ignoring regulatory-data exposure."
+  },
+  {
+    "id": 7,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A DDoS attack disrupts the Chemicals SBU customer ordering and logistics platform during a peak shipping period.",
+    "steps": [
+      "Engage Cybersecurity and DDoS mitigation providers immediately.",
+      "Activate crisis-management governance with SBU and Executive leadership.",
+      "Implement alternate customer-order and logistics channels to maintain supply continuity."
+    ],
+    "rationale": "Chemical supply continuity is critical for industrial customers; NIST Respond requires command structure, continuity, and validated recovery.",
+    "areaMeasured": "Leadership decision-making under pressure and chemicals supply-chain continuity.",
+    "ifCorrect": "Shows balanced thinking: Cybersecurity engagement with supply-chain continuity.",
+    "ifWrong": "Indicates reactive behavior, supply-chain paralysis, or bypassing Cybersecurity governance."
+  },
+  {
+    "id": 8,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "R&D access logs identify that a Chemicals SBU scientist's account has been used after hours to download proprietary chemical synthesis data and patent-pending formulations.",
+    "steps": [
+      "Escalate confidentially to Corporate Cybersecurity, Legal, HR, and SBU Leadership.",
+      "Preserve access logs, file-transfer records, and endpoint evidence.",
+      "Investigate whether proprietary chemical IP was exfiltrated and assess potential recipients."
+    ],
+    "rationale": "Chemical IP exfiltration requires evidence preservation and governance before personnel action to protect legal defensibility and competitive advantage.",
+    "areaMeasured": "Chemical IP protection and insider-risk governance.",
+    "ifCorrect": "Shows structured evidence handling, legal alignment, and chemical IP protection response.",
+    "ifWrong": "Indicates impulsive account termination or failure to preserve evidence for IP investigation."
+  },
+  {
+    "id": 9,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupts the Chemicals SBU ERP system, halting chemical order processing, logistics coordination, and inventory management.",
+    "steps": [
+      "Notify Corporate Cybersecurity and activate the cyber incident response process; isolate the ERP system.",
+      "Assess impact on order processing, logistics, and inventory; implement manual procedures for priority orders.",
+      "Communicate proactively with affected customers and logistics providers on order delays and alternatives."
+    ],
+    "rationale": "NIST Recover functions require validated restoration; manual continuity protects supply-chain commitments during recovery.",
+    "areaMeasured": "ERP continuity and supply-chain recovery governance.",
+    "ifCorrect": "Shows balanced recovery thinking with supply-chain focus.",
+    "ifWrong": "Indicates customer communication avoidance, premature ERP reconnection, or operational paralysis."
+  },
+  {
+    "id": 10,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "The Chemicals SBU LIMS is restored after a malware incident. Regulatory affairs teams need immediate access to submit overdue product registration documents.",
+    "steps": [
+      "Ensure Corporate Cybersecurity completes forensic validation before LIMS access is reauthorized.",
+      "Validate that regulatory data integrity, access controls, and audit trails have been fully restored.",
+      "Conduct controlled testing with regulatory and quality teams before production LIMS use."
+    ],
+    "rationale": "NIST recovery guidance requires independent validation before reactivation; premature LIMS access risks corrupted regulatory data or non-compliant product certifications.",
+    "areaMeasured": "Separation of duties and safe LIMS restoration.",
+    "ifCorrect": "Shows understanding of dual validation (Cyber + Regulatory/Quality) before LIMS reactivation.",
+    "ifWrong": "Suggests unsafe LIMS reconnection driven by regulatory deadline pressure without cyber validation."
+  },
+  {
+    "id": 11,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "Following a ransomware incident affecting Chemicals SBU plant and commercial systems, SBU leadership requests a post-incident review.",
+    "steps": [
+      "Confirm that restored systems have passed integrity validation before convening the review.",
+      "Monitor Chemicals SBU systems for residual malware indicators and abnormal process behavior post-recovery.",
+      "Conduct a governance review with Cybersecurity, BC/DR, and SBU Leadership to evaluate impact and recovery effectiveness."
+    ],
+    "rationale": "NIST Recover and Improve practices require secure restoration validation before governance review; lessons learned drive long-term SBU resilience.",
+    "areaMeasured": "Post-incident governance and chemicals SBU learning culture.",
+    "ifCorrect": "Shows maturity in structured post-incident review and SBU resilience improvement.",
+    "ifWrong": "Indicates lack of accountability, siloed thinking, or skipping restoration validation before review."
+  },
+  {
+    "id": 12,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident delays shipments of specialty chemicals to pharmaceutical and industrial customers, triggering contract penalties and regulatory concerns.",
+    "steps": [
+      "Activate crisis communication structure; align SBU and Supply Chain leadership on impact and recovery plan.",
+      "Brief internal stakeholders with consistent messaging on shipment delays, mitigation actions, and revised timelines.",
+      "Communicate proactively with affected customers, regulators, and logistics providers on delays and recovery expectations."
+    ],
+    "rationale": "NIST guidance requires governance and situational awareness first, then internal alignment, external communication, and post-incident improvement.",
+    "areaMeasured": "Stakeholder communication and specialty-chemicals supply-chain continuity.",
+    "ifCorrect": "Shows strong crisis communication and customer-relationship management in chemical operations.",
+    "ifWrong": "Indicates commercial and regulatory risk, or avoidance of proactive customer and regulator communication."
+  }
+]

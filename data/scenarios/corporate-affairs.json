@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "domain": "Prevention & Protection",
+    "scenario": "A review of Corporate Affairs access rights reveals that former employees and retired board secretaries still have active access to board communication platforms and regulatory filing systems.",
+    "steps": [
+      "Escalate to Corporate Affairs Leadership and Corporate Cybersecurity; direct immediate remediation of stale access.",
+      "Conduct a rapid entitlement review across all Corporate Affairs platforms and board-communication systems.",
+      "Disable or restrict all stale accounts pending formal recertification."
+    ],
+    "rationale": "NIST Protect requires identity governance; stale access in Corporate Affairs platforms creates significant governance and regulatory risk.",
+    "areaMeasured": "Identity governance and corporate-governance information security.",
+    "ifCorrect": "Shows alignment with enterprise identity governance and regulatory-platform security.",
+    "ifWrong": "Indicates weak access governance or underestimation of stale-account risk in sensitive corporate systems."
+  },
+  {
+    "id": 2,
+    "domain": "Prevention & Protection",
+    "scenario": "A Corporate Affairs officer receives a spear-phishing email that accurately references upcoming board agenda items and requests validation of personal credentials.",
+    "steps": [
+      "Report the incident to Corporate Cybersecurity immediately; do not click links or validate credentials.",
+      "Preserve the phishing email as forensic evidence; assess how the attacker obtained board agenda details.",
+      "Investigate whether board systems or communications channels have been compromised."
+    ],
+    "rationale": "Spear-phishing targeting Corporate Affairs personnel exploits access to sensitive governance information; NIST Protect requires immediate reporting, investigation, and technical controls.",
+    "areaMeasured": "Executive-targeted threat awareness and board-communication security.",
+    "ifCorrect": "Shows proper incident-reporting behavior and proactive security response for executive communications.",
+    "ifWrong": "Indicates failure to recognize spear-phishing indicators or delay in escalation."
+  },
+  {
+    "id": 3,
+    "domain": "Prevention & Protection",
+    "scenario": "Regulatory authorities notify SABIC that public filings submitted through the corporate affairs portal may have contained embedded malware distributed to government recipients.",
+    "steps": [
+      "Notify Corporate Cybersecurity, Legal, and SABIC Executive Leadership immediately; activate the cyber crisis escalation process.",
+      "Contain the risk: suspend the filing portal, preserve forensic evidence, and notify affected regulatory authorities.",
+      "Investigate the source of malware insertion and assess whether other filings or communications were compromised."
+    ],
+    "rationale": "Regulatory notification obligations and reputational risk require immediate governance escalation; NIST Respond requires containment before investigation and stakeholder notification.",
+    "areaMeasured": "Regulatory compliance and cyber-incident governance.",
+    "ifCorrect": "Shows understanding of regulatory obligations, breach containment, and government-authority coordination.",
+    "ifWrong": "Indicates delayed regulatory notification, inadequate containment, or underestimation of government-authority exposure."
+  },
+  {
+    "id": 4,
+    "domain": "Prevention & Protection",
+    "scenario": "A third-party PR agency engaged by Corporate Affairs is found to be storing SABIC draft press releases and strategic communications on an unsecured cloud platform.",
+    "steps": [
+      "Notify Corporate Cybersecurity and Corporate Affairs Leadership; instruct the PR agency to immediately secure or delete the exposed materials.",
+      "Preserve evidence of the exposure; assess what materials were stored and their sensitivity.",
+      "Evaluate whether the exposure constitutes a data breach with regulatory or market-sensitivity implications."
+    ],
+    "rationale": "Third-party information-security failures in Corporate Affairs create market-sensitivity and regulatory risks; NIST Govern and Protect require structured vendor security governance.",
+    "areaMeasured": "Third-party information security and vendor governance.",
+    "ifCorrect": "Shows understanding of vendor-security risks and the need for contractual security standards.",
+    "ifWrong": "Indicates overreliance on vendor trust without governance or security requirements."
+  },
+  {
+    "id": 5,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "Hackers leak internal SABIC communications and draft press releases on a public platform, threatening reputational damage ahead of a major investor announcement.",
+    "steps": [
+      "Notify Corporate Cybersecurity, Legal, Communications Leadership, and SABIC Executive Leadership; activate the cyber crisis escalation process.",
+      "Identify and preserve forensic evidence of the leak; restrict further access to communications and press-release drafting systems.",
+      "Determine the scope of leaked content, assess reputational and market-sensitivity exposure, and validate whether additional confidential materials are at risk."
+    ],
+    "rationale": "NIST incident-response principles: governance → containment → investigation → communication/remediation. Premature public statements before Cybersecurity assessment can amplify reputational harm.",
+    "areaMeasured": "Executive escalation discipline and reputational breach governance.",
+    "ifCorrect": "Shows strong understanding of breach protocols, regulatory exposure, and the need for Cybersecurity-led assessment before public communications.",
+    "ifWrong": "Indicates weak escalation culture, reactive public statements, or underestimation of reputational and market impact."
+  },
+  {
+    "id": 6,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A ransomware attack encrypts the Corporate Affairs document management system, locking access to regulatory filings, board communications, and stakeholder correspondence.",
+    "steps": [
+      "Notify Corporate Cybersecurity and activate the cyber incident response process; isolate the document management system.",
+      "Assess which filings and board communications are time-sensitive; implement business continuity procedures for critical regulatory submissions.",
+      "Evaluate whether confidential board or regulatory documents were accessed or exfiltrated during the attack."
+    ],
+    "rationale": "Corporate Affairs handles time-sensitive regulatory and board materials; NIST Respond/Recover guidance requires containment and validation before restoration, with regulatory-reporting obligations assessed early.",
+    "areaMeasured": "Regulatory-reporting continuity and breach-response governance.",
+    "ifCorrect": "Shows understanding of time-sensitive regulatory obligations and Cybersecurity-led containment.",
+    "ifWrong": "Suggests rushing restoration without forensic validation or ignoring regulatory-reporting obligations."
+  },
+  {
+    "id": 7,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A DDoS attack disrupts the Corporate Affairs external stakeholder portal, preventing investors and regulators from accessing official SABIC communications.",
+    "steps": [
+      "Engage Cybersecurity and DDoS mitigation providers immediately.",
+      "Activate crisis-management governance with Corporate Affairs and Executive leadership.",
+      "Implement alternate stakeholder communication channels to maintain regulatory and investor continuity."
+    ],
+    "rationale": "Operational resilience requires command structure, stabilization, continuity, and validated recovery consistent with NIST Respond best practices.",
+    "areaMeasured": "Leadership decision-making under pressure and stakeholder communication continuity.",
+    "ifCorrect": "Shows balanced thinking: Cybersecurity engagement with stakeholder continuity management.",
+    "ifWrong": "Indicates reactive behavior, stakeholder communication paralysis, or bypassing Cybersecurity governance."
+  },
+  {
+    "id": 8,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "Access logs reveal that a Corporate Affairs staff member has been accessing and forwarding confidential government-relations briefings to an external email address.",
+    "steps": [
+      "Escalate confidentially to Corporate Cybersecurity, HR, Legal, and authorized leadership.",
+      "Preserve email logs, access records, and forwarded document evidence.",
+      "Investigate the scope, intent, and potential recipients of the forwarded government-relations materials."
+    ],
+    "rationale": "Insider-threat investigations require evidence preservation and governance before containment to protect investigative integrity, legal defensibility, and government-relations sensitivity.",
+    "areaMeasured": "Insider-risk governance and government-relations information protection.",
+    "ifCorrect": "Shows structured evidence handling, legal alignment, and sensitive-information governance.",
+    "ifWrong": "Indicates impulsive action, premature termination, or failure to preserve evidence for investigation."
+  },
+  {
+    "id": 9,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupts the Corporate Affairs regulatory filing portal during a critical submission deadline period.",
+    "steps": [
+      "Notify Corporate Cybersecurity and activate the cyber incident response process; assess which filings are imminently due.",
+      "Implement business continuity procedures: coordinate with Legal and Regulatory teams to identify alternate submission mechanisms and request deadline extensions where applicable.",
+      "Communicate proactively with regulatory authorities regarding the incident and any expected delays."
+    ],
+    "rationale": "NIST Recover functions require validated restoration; proactive regulator communication during outages demonstrates governance maturity and reduces penalty risk.",
+    "areaMeasured": "Regulatory continuity and incident communication governance.",
+    "ifCorrect": "Shows proactive regulatory engagement and business-continuity maturity.",
+    "ifWrong": "Indicates delayed regulatory communication, missed deadlines, or premature portal reconnection."
+  },
+  {
+    "id": 10,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "Following a breach of the Corporate Affairs document management system, external legal counsel requests all communications and documents from the past 12 months for regulatory investigation.",
+    "steps": [
+      "Ensure Corporate Cybersecurity preserves forensic integrity of all documents before any legal disclosure.",
+      "Coordinate with Legal to identify documents within scope of the regulatory request and apply appropriate legal holds.",
+      "Conduct a controlled review of documents before disclosure to confirm no additional sensitive materials are inadvertently shared."
+    ],
+    "rationale": "Regulatory investigations require forensic integrity and legal governance; premature or uncoordinated document disclosure can harm SABIC's legal position.",
+    "areaMeasured": "Legal hold governance and regulatory-investigation response.",
+    "ifCorrect": "Shows understanding of forensic integrity, legal-hold requirements, and coordinated disclosure.",
+    "ifWrong": "Suggests premature document disclosure without legal review or forensic validation."
+  },
+  {
+    "id": 11,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident that disrupted external stakeholder communications has been resolved. Corporate Affairs leadership wants to assess reputational impact and rebuild stakeholder trust.",
+    "steps": [
+      "Confirm that restored communication platforms have passed integrity validation before resuming stakeholder engagement.",
+      "Monitor communications channels for residual anomalies and assess any reputational impact from the incident.",
+      "Conduct a governance review with Communications, Legal, and Executive leadership to evaluate the incident's reputational impact and response effectiveness."
+    ],
+    "rationale": "NIST Recover and Improve practices require secure restoration before reputational review; lessons learned strengthen stakeholder trust and communication resilience.",
+    "areaMeasured": "Post-incident reputational governance and stakeholder trust recovery.",
+    "ifCorrect": "Shows maturity in structured post-incident review and stakeholder trust management.",
+    "ifWrong": "Indicates lack of accountability, premature stakeholder engagement, or skipping restoration validation."
+  },
+  {
+    "id": 12,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident delayed critical board and investor communications during an earnings period, creating regulatory and market concerns.",
+    "steps": [
+      "Activate crisis communication structure; align Corporate Affairs and Executive leadership on impact and recovery plan.",
+      "Brief Board Secretary, Investor Relations, and Legal with consistent messaging on communication delays and mitigation actions.",
+      "Communicate proactively with investors and regulatory authorities regarding communication delays and recovery timeline."
+    ],
+    "rationale": "NIST guidance requires governance and situational awareness first, then internal alignment, external communication, and post-incident improvement.",
+    "areaMeasured": "Board communication continuity and investor-relations crisis management.",
+    "ifCorrect": "Shows strong crisis communication and investor-relations governance during a cyber incident.",
+    "ifWrong": "Indicates reputational and regulatory risk, or avoidance of proactive board and investor communication."
+  }
+]

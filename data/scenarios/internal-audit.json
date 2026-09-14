@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "domain": "Prevention & Protection",
+    "scenario": "Internal Audit's annual IT controls assessment identifies that audit management system access has not been formally recertified, with multiple ex-employees and former contractors retaining active access.",
+    "steps": [
+      "Escalate to CAE and Corporate Cybersecurity; direct immediate access remediation.",
+      "Conduct a full entitlement review of audit management system access.",
+      "Disable all stale accounts pending formal recertification."
+    ],
+    "rationale": "NIST Protect requires identity governance for systems containing sensitive audit findings and confidential management information; stale access creates significant governance risk.",
+    "areaMeasured": "Identity governance and audit-system access control.",
+    "ifCorrect": "Shows alignment with enterprise identity governance and audit-information security.",
+    "ifWrong": "Indicates weak access governance or underestimation of stale-account risk in audit systems."
+  },
+  {
+    "id": 2,
+    "domain": "Prevention & Protection",
+    "scenario": "Internal Audit discovers that audit findings and management action plans are shared with process owners via unsecured email attachments rather than through the secure audit management system.",
+    "steps": [
+      "Notify CAE and Corporate Cybersecurity; direct all audit communications to be channeled through the secure audit management system.",
+      "Assess what audit findings have been shared via unsecured email and their sensitivity.",
+      "Implement secure communication controls for audit findings distribution."
+    ],
+    "rationale": "NIST Protect requires secure communication channels for sensitive information; unencrypted audit finding distribution creates confidentiality and regulatory risk.",
+    "areaMeasured": "Audit communication security and information-protection governance.",
+    "ifCorrect": "Shows alignment with secure-communication principles and audit-confidentiality standards.",
+    "ifWrong": "Indicates underestimation of audit finding sensitivity or failure to enforce secure communication channels."
+  },
+  {
+    "id": 3,
+    "domain": "Prevention & Protection",
+    "scenario": "During an Internal Audit review, auditors identify that the organization's data-backup systems have never been tested for recovery, despite being listed as a key control in the cyber resilience framework.",
+    "steps": [
+      "Report the finding to CAE and escalate to IT and Corporate Cybersecurity.",
+      "Document the control deficiency as a high-risk finding with immediate management action required.",
+      "Recommend and oversee a backup-recovery test to validate system reliability."
+    ],
+    "rationale": "Untested backup systems represent a critical control failure; NIST Recover requires validated backup integrity for effective ransomware recovery. Internal Audit's role is to identify, escalate, and track remediation.",
+    "areaMeasured": "Control-deficiency identification and audit follow-up governance.",
+    "ifCorrect": "Shows alignment with audit's role in identifying critical control gaps and driving remediation.",
+    "ifWrong": "Indicates failure to escalate critical findings or accepting management's verbal assurances without evidence."
+  },
+  {
+    "id": 4,
+    "domain": "Prevention & Protection",
+    "scenario": "Phishing simulation results show that 37% of Internal Audit staff submitted credentials, including individuals with access to sensitive audit findings and management response data.",
+    "steps": [
+      "Report findings to CAE and Corporate Cybersecurity; escalate as an audit-independence and data-protection risk.",
+      "Analyze results by role to identify highest-risk audit staff.",
+      "Mandate targeted security awareness training with audit-specific phishing scenarios."
+    ],
+    "rationale": "NIST Protect requires continuous awareness; high phishing rates in Internal Audit create elevated audit-independence and confidential-data breach risk.",
+    "areaMeasured": "Security awareness maturity and audit human-risk governance.",
+    "ifCorrect": "Shows structured approach to reducing audit human-risk through training and technical controls.",
+    "ifWrong": "Indicates dismissal of awareness gaps or over-reliance on technical controls without addressing human risk."
+  },
+  {
+    "id": 5,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "During a cyber incident investigation, Internal Audit is notified that audit evidence and working papers stored in the audit management system may have been accessed or altered by the attacker.",
+    "steps": [
+      "Notify Corporate Cybersecurity, Legal, Chief Audit Executive (CAE), and SABIC Executive Leadership; activate the cyber crisis escalation process.",
+      "Preserve forensic evidence, restrict audit system access, and assess the integrity of audit working papers.",
+      "Determine the scope of audit evidence potentially compromised; assess impact on ongoing and completed audits."
+    ],
+    "rationale": "Audit working paper integrity is critical for regulatory compliance and legal defensibility; NIST incident-response requires governance → containment → investigation → communication.",
+    "areaMeasured": "Audit evidence integrity and breach governance.",
+    "ifCorrect": "Shows understanding of audit evidence protection, regulatory obligations, and Cybersecurity-led assessment.",
+    "ifWrong": "Indicates weak escalation culture, underestimation of audit integrity risk, or bypassing Cybersecurity authority."
+  },
+  {
+    "id": 6,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "Ransomware encrypts the Internal Audit department's audit management and documentation platform, locking access to audit plans, findings, and board-level reports.",
+    "steps": [
+      "Notify Corporate Cybersecurity; isolate the audit management platform and halt automated audit-data feeds.",
+      "Assess which audit deliverables are time-sensitive; implement manual audit documentation procedures.",
+      "Determine whether confidential audit findings or management responses were accessed or exfiltrated."
+    ],
+    "rationale": "Audit management system breaches can compromise audit independence and regulatory compliance; NIST Respond/Recover requires containment, validation, and audit-program continuity.",
+    "areaMeasured": "Audit-system resilience and audit-independence breach governance.",
+    "ifCorrect": "Shows understanding of audit-system risks and the need for validated restoration.",
+    "ifWrong": "Suggests rushing audit system restoration without forensic validation or ignoring audit-integrity implications."
+  },
+  {
+    "id": 7,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "During a scheduled Internal Audit review of IT controls, auditors discover active indicators of compromise (IOC) on systems within the scope of the audit.",
+    "steps": [
+      "Immediately notify Corporate Cybersecurity and suspend audit activities on compromised systems to preserve forensic integrity.",
+      "Coordinate with Cybersecurity to determine the scope of compromise without contaminating forensic evidence.",
+      "Assess whether audit activities inadvertently interacted with compromised systems and document all audit actions taken."
+    ],
+    "rationale": "Audit discovery of active IOCs creates both a cybersecurity incident and an audit-scope integrity issue; NIST Respond requires immediate notification and coordination to preserve forensic evidence.",
+    "areaMeasured": "Audit independence and incident-response coordination.",
+    "ifCorrect": "Shows proper incident-reporting behavior and forensic-preservation discipline during active audit work.",
+    "ifWrong": "Indicates failure to report active IOCs or continuing audit activities that risk contaminating forensic evidence."
+  },
+  {
+    "id": 8,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "An Internal Audit team member's laptop is lost during international travel, containing unencrypted audit working papers and management interview notes.",
+    "steps": [
+      "Report the loss to Corporate Cybersecurity and CAE immediately; initiate remote lock or wipe procedures.",
+      "Preserve travel records and access telemetry; determine whether the device shows signs of unauthorized access.",
+      "Assess the sensitivity of the audit working papers on the device and potential regulatory obligations."
+    ],
+    "rationale": "Lost audit devices with unencrypted working papers create audit-independence and regulatory risk; NIST Respond requires immediate device containment and scope assessment.",
+    "areaMeasured": "Audit device security and working-paper confidentiality governance.",
+    "ifCorrect": "Shows proper device-loss response and audit-confidentiality governance.",
+    "ifWrong": "Indicates delayed reporting, failure to initiate remote wipe, or underestimation of audit-data sensitivity."
+  },
+  {
+    "id": 9,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupts the Internal Audit function's access to key financial and ERP systems during an ongoing audit of financial controls.",
+    "steps": [
+      "Notify Corporate Cybersecurity and CAE; assess which audit procedures are impacted by the access disruption.",
+      "Implement alternate audit procedures where possible: documentary review, interviews, and manual sampling.",
+      "Document all audit procedures affected by the access disruption and assess audit-opinion implications."
+    ],
+    "rationale": "NIST Recover functions require validated restoration; audit programs must adapt to access disruptions while maintaining audit-opinion integrity.",
+    "areaMeasured": "Audit continuity and access-disruption governance.",
+    "ifCorrect": "Shows proactive audit adaptation and audit-integrity preservation during access disruption.",
+    "ifWrong": "Indicates suspension of all audit work without adaptation, or premature system access before Cybersecurity validation."
+  },
+  {
+    "id": 10,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "The Internal Audit management system is restored after a malware incident. The CAE is under pressure to immediately submit overdue quarterly audit reports to the Audit Committee.",
+    "steps": [
+      "Ensure Corporate Cybersecurity completes forensic validation before audit system access is reauthorized.",
+      "Validate that audit working paper integrity, access controls, and audit trails have been fully restored.",
+      "Conduct controlled audit team testing before full system reactivation."
+    ],
+    "rationale": "NIST recovery guidance requires independent validation before reactivation; premature audit system access risks corrupted working papers or unauthorized findings disclosure.",
+    "areaMeasured": "Separation of duties and safe audit-system restoration.",
+    "ifCorrect": "Shows understanding of dual validation (Cyber + Audit) before system reactivation.",
+    "ifWrong": "Suggests unsafe reconnection driven by Audit Committee reporting pressure without cyber validation."
+  },
+  {
+    "id": 11,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "Following a ransomware incident affecting Internal Audit systems, the Audit Committee requests a review of how the cyber incident affects audit coverage and SABIC's overall control environment.",
+    "steps": [
+      "Confirm that restored audit systems have passed integrity validation before convening the Audit Committee review.",
+      "Assess which audits were impacted by the incident and identify any gaps in audit coverage requiring remediation.",
+      "Present the Audit Committee with a clear assessment of incident impact on audit independence, coverage gaps, and recommended remediation."
+    ],
+    "rationale": "NIST Recover and Improve practices require secure restoration validation before governance review; the Audit Committee review should focus on audit-coverage implications and long-term resilience.",
+    "areaMeasured": "Post-incident audit governance and Audit Committee reporting.",
+    "ifCorrect": "Shows maturity in structured post-incident audit review and transparent Audit Committee communication.",
+    "ifWrong": "Indicates lack of audit-coverage transparency, premature Audit Committee reporting, or skipping restoration validation."
+  },
+  {
+    "id": 12,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident delayed the Internal Audit department's quarterly report to SABIC's Audit Committee, creating governance and oversight concerns.",
+    "steps": [
+      "Activate crisis communication structure; align CAE and Audit Committee Chair on impact and recovery plan.",
+      "Brief Audit Committee with consistent messaging on reporting delays, incident impact, and interim oversight measures.",
+      "Communicate proactively with the Audit Committee on alternative interim reporting mechanisms."
+    ],
+    "rationale": "NIST guidance requires governance and situational awareness first, then internal alignment, external communication, and post-incident improvement.",
+    "areaMeasured": "Audit Committee communication continuity and governance crisis management.",
+    "ifCorrect": "Shows strong crisis communication and Audit Committee governance during a cyber incident.",
+    "ifWrong": "Indicates governance risk, or avoidance of proactive Audit Committee communication during reporting delays."
+  }
+]

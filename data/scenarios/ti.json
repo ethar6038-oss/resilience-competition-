@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "domain": "Prevention & Protection",
+    "scenario": "A T&I security review reveals that R&D scientists are using personal cloud storage to sync proprietary research data for convenience.",
+    "steps": [
+      "Notify T&I Leadership and Corporate Cybersecurity; direct all scientists to immediately cease use of personal cloud storage for R&D data.",
+      "Assess what R&D data has been stored on personal cloud platforms and its IP sensitivity.",
+      "Implement approved secure file-sharing solutions and technical controls to prevent personal cloud-storage use."
+    ],
+    "rationale": "NIST Protect requires data governance and approved secure storage for R&D IP; personal cloud use creates significant IP exfiltration and regulatory risk.",
+    "areaMeasured": "R&D data governance and shadow-IT risk management.",
+    "ifCorrect": "Shows alignment with data governance principles and proactive shadow-IT risk management.",
+    "ifWrong": "Indicates underestimation of personal cloud-storage risk or failure to enforce data-handling policies."
+  },
+  {
+    "id": 2,
+    "domain": "Prevention & Protection",
+    "scenario": "T&I leadership is planning to deploy an AI-powered research discovery tool that will require ingesting SABIC's full proprietary research database, including confidential formulations.",
+    "steps": [
+      "Engage Corporate Cybersecurity and Legal before deployment to assess data-protection and IP risks.",
+      "Conduct a data-protection impact assessment (DPIA) for the AI tool, including third-party data-processing obligations.",
+      "Implement data minimization controls: limit R&D data ingested by the AI tool to the minimum necessary."
+    ],
+    "rationale": "NIST Govern and Protect require security and privacy by design; AI tools processing proprietary R&D data require DPIA, data minimization, and governance approval before deployment.",
+    "areaMeasured": "AI deployment governance and R&D data-protection maturity.",
+    "ifCorrect": "Shows alignment with security-by-design principles and responsible AI deployment governance.",
+    "ifWrong": "Indicates bypassing data-protection review, underestimation of AI data-processing risks, or premature deployment."
+  },
+  {
+    "id": 3,
+    "domain": "Prevention & Protection",
+    "scenario": "A T&I open-innovation event invites external startups and researchers to access a shared digital workspace containing SABIC proprietary datasets for a collaborative hackathon.",
+    "steps": [
+      "Engage Corporate Cybersecurity and Legal to review access scope and data-protection controls before the event.",
+      "Implement data-minimization controls: create a sandboxed environment with only anonymized or non-proprietary datasets.",
+      "Enforce strict access governance: time-limited accounts, NDA compliance, and session monitoring for all external participants."
+    ],
+    "rationale": "Open-innovation events create controlled but real IP-exposure risk; NIST Govern and Protect require pre-event security review, data minimization, and post-event access governance.",
+    "areaMeasured": "Open-innovation security governance and third-party IP protection.",
+    "ifCorrect": "Shows alignment with security-by-design and proactive IP-protection governance for innovation events.",
+    "ifWrong": "Indicates underestimation of open-innovation IP risk or failure to implement data minimization and access controls."
+  },
+  {
+    "id": 4,
+    "domain": "Prevention & Protection",
+    "scenario": "Phishing simulation results show that 44% of T&I R&D scientists and innovation managers submitted credentials, including individuals with access to patent-pending formulations and JDA data.",
+    "steps": [
+      "Report findings to T&I Leadership and Corporate Cybersecurity; escalate as a critical R&D IP risk.",
+      "Analyze results by role to identify highest-risk R&D and innovation management users.",
+      "Mandate targeted security awareness training with T&I-specific IP-protection and phishing scenarios."
+    ],
+    "rationale": "NIST Protect requires continuous awareness; high phishing rates in T&I create elevated R&D IP and JDA-breach risk requiring structured intervention.",
+    "areaMeasured": "Security awareness maturity and T&I human-risk governance.",
+    "ifCorrect": "Shows structured approach to reducing R&D human-risk through training and technical controls.",
+    "ifWrong": "Indicates dismissal of awareness gaps or over-reliance on technical controls without addressing R&D IP risk."
+  },
+  {
+    "id": 5,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A cyber attack compromises the SABIC T&I R&D data management platform, exposing proprietary polymer research, patent-pending formulations, and joint-development agreement (JDA) data.",
+    "steps": [
+      "Notify Corporate Cybersecurity, Legal, T&I Leadership, and SABIC Executive Leadership; activate the cyber crisis escalation process.",
+      "Preserve forensic evidence, restrict R&D platform access, and suspend automated data feeds to collaborative R&D partners.",
+      "Determine the scope of R&D IP and JDA data exposed; assess patent, contractual, and regulatory implications."
+    ],
+    "rationale": "NIST incident-response principles: governance → containment → investigation → communication. R&D IP breaches create competitive, contractual, and patent-integrity risk.",
+    "areaMeasured": "R&D IP breach governance and innovation-protection response.",
+    "ifCorrect": "Shows strong understanding of R&D breach protocols, IP exposure, and Cybersecurity-led assessment.",
+    "ifWrong": "Indicates weak escalation culture, underestimation of innovation IP exposure, or bypassing Cybersecurity authority."
+  },
+  {
+    "id": 6,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "Ransomware encrypts the T&I innovation pipeline management platform, locking access to technology roadmaps, stage-gate submissions, and new product development (NPD) data.",
+    "steps": [
+      "Notify Corporate Cybersecurity; isolate the innovation platform and halt automated NPD data feeds.",
+      "Assess which stage-gate submissions and technology roadmap data are time-critical; implement manual innovation-tracking procedures.",
+      "Determine whether proprietary technology roadmap or NPD data was accessed or exfiltrated."
+    ],
+    "rationale": "Innovation platform breaches threaten T&I's competitive advantage and NPD timelines; NIST Respond/Recover requires containment, validation, and IP-loss assessment.",
+    "areaMeasured": "Innovation platform resilience and NPD IP breach governance.",
+    "ifCorrect": "Shows understanding of innovation platform risks and IP-protection obligations.",
+    "ifWrong": "Suggests rushing platform restoration without forensic validation or ignoring NPD data exposure."
+  },
+  {
+    "id": 7,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A DDoS attack disrupts the T&I digital innovation platform used for collaborative R&D with global university and industry partners.",
+    "steps": [
+      "Engage Cybersecurity and DDoS mitigation providers immediately.",
+      "Activate crisis-management governance with T&I and Executive leadership.",
+      "Implement alternate R&D collaboration channels to maintain partner continuity."
+    ],
+    "rationale": "R&D partner collaboration disruptions affect innovation timelines and external partnerships; NIST Respond requires command structure, continuity, and validated recovery.",
+    "areaMeasured": "Leadership decision-making under pressure and R&D collaboration continuity.",
+    "ifCorrect": "Shows balanced thinking: Cybersecurity engagement with R&D partner continuity.",
+    "ifWrong": "Indicates reactive behavior, R&D paralysis, or bypassing Cybersecurity governance."
+  },
+  {
+    "id": 8,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "T&I digital-lab access logs show that a university research partner's shared account has been used to download SABIC's full portfolio of catalyst research and pilot-plant test data.",
+    "steps": [
+      "Escalate confidentially to Corporate Cybersecurity, Legal, T&I Leadership, and the relevant academic partnership manager.",
+      "Preserve access logs, file-transfer records, and partner session evidence.",
+      "Investigate the scope of downloaded R&D data and assess IP, patent, and JDA breach implications."
+    ],
+    "rationale": "Third-party R&D partner access misuse requires evidence preservation and governance before legal action to protect IP and JDA legal defensibility.",
+    "areaMeasured": "Third-party R&D access governance and catalyst IP protection.",
+    "ifCorrect": "Shows structured evidence handling, legal alignment, and R&D IP protection response.",
+    "ifWrong": "Indicates impulsive partner access revocation or failure to preserve evidence for legal proceedings."
+  },
+  {
+    "id": 9,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupts the T&I digital R&D platform during a critical experimental campaign, causing loss of real-time process data from pilot plant trials.",
+    "steps": [
+      "Notify Corporate Cybersecurity and activate the cyber incident response process; assess experimental data loss.",
+      "Implement manual data-capture procedures for ongoing pilot plant trials to preserve experimental continuity.",
+      "Communicate proactively with R&D leadership and affected research teams on data-loss implications and recovery options."
+    ],
+    "rationale": "NIST Recover functions require validated restoration; manual continuity during active R&D campaigns protects experimental program timelines and data integrity.",
+    "areaMeasured": "R&D campaign continuity and data-integrity recovery governance.",
+    "ifCorrect": "Shows balanced recovery thinking with experimental-program focus.",
+    "ifWrong": "Indicates R&D program paralysis, data-loss avoidance, or premature platform reconnection."
+  },
+  {
+    "id": 10,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "The T&I innovation pipeline management platform is restored after a malware incident. R&D teams need immediate access to submit time-sensitive stage-gate papers.",
+    "steps": [
+      "Ensure Corporate Cybersecurity completes forensic validation before platform access is reauthorized.",
+      "Validate that NPD data integrity, access controls, and innovation-pipeline audit trails have been fully restored.",
+      "Conduct controlled access testing with R&D and innovation management teams before full platform reactivation."
+    ],
+    "rationale": "NIST recovery guidance requires independent validation before reactivation; premature platform access risks corrupted NPD data or unauthorized innovation IP access.",
+    "areaMeasured": "Separation of duties and safe R&D platform restoration.",
+    "ifCorrect": "Shows understanding of dual validation (Cyber + R&D) before innovation platform reactivation.",
+    "ifWrong": "Suggests unsafe reconnection driven by stage-gate deadline pressure without cyber validation."
+  },
+  {
+    "id": 11,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "Following a ransomware incident affecting T&I R&D systems, the Chief Technology Officer requests a post-incident review to assess R&D program impact and IP loss.",
+    "steps": [
+      "Confirm that restored R&D systems have passed integrity validation before convening the review.",
+      "Monitor T&I systems for residual malware indicators and abnormal R&D data-access behavior post-recovery.",
+      "Conduct a governance review with Cybersecurity, Legal, and T&I Leadership to evaluate R&D program impact, IP loss, and recovery effectiveness."
+    ],
+    "rationale": "NIST Recover and Improve practices require secure restoration validation before governance review; lessons learned drive long-term T&I resilience and IP protection.",
+    "areaMeasured": "Post-incident T&I governance and innovation learning culture.",
+    "ifCorrect": "Shows maturity in structured post-incident review and R&D resilience improvement.",
+    "ifWrong": "Indicates lack of accountability, siloed thinking, or skipping restoration validation before review."
+  },
+  {
+    "id": 12,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupted T&I communications and data sharing with key R&D partners, threatening joint-development timelines and patent filings.",
+    "steps": [
+      "Activate crisis communication structure; align T&I and Executive leadership on partner impact and recovery plan.",
+      "Brief R&D partners and Legal with consistent messaging on communication delays, IP-protection measures, and recovery timeline.",
+      "Communicate proactively with JDA partners and patent counsel on timeline implications and alternative communication channels."
+    ],
+    "rationale": "NIST guidance requires governance and situational awareness first, then internal alignment, external communication, and post-incident improvement.",
+    "areaMeasured": "R&D partner communication continuity and JDA cyber crisis governance.",
+    "ifCorrect": "Shows strong crisis communication and JDA partner management during a cyber incident.",
+    "ifWrong": "Indicates IP, patent, and JDA risk, or avoidance of proactive partner communication during cyber disruption."
+  }
+]

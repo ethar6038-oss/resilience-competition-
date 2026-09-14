@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "domain": "Prevention & Protection",
+    "scenario": "An HR audit reveals that access rights to payroll processing and compensation systems have not been recertified for over 24 months, with numerous role changes and departures unaddressed.",
+    "steps": [
+      "Escalate to HR Leadership and Corporate Cybersecurity; direct immediate access remediation.",
+      "Conduct a full entitlement review of payroll and compensation system access.",
+      "Disable or restrict all stale accounts pending formal recertification."
+    ],
+    "rationale": "NIST Protect requires identity governance; stale access to payroll systems creates significant insider-threat and data-breach risk.",
+    "areaMeasured": "Identity governance and payroll-system access-control maturity.",
+    "ifCorrect": "Shows alignment with enterprise identity governance and payroll security standards.",
+    "ifWrong": "Indicates weak access governance or underestimation of stale-account risk in HR systems."
+  },
+  {
+    "id": 2,
+    "domain": "Prevention & Protection",
+    "scenario": "A social-engineering caller convinces an HR service-desk agent to reset an employee's network credentials by citing an urgent travel emergency and claiming to be an executive.",
+    "steps": [
+      "Notify Corporate Cybersecurity immediately; place a hold on the credential reset performed by the service-desk agent.",
+      "Validate the legitimacy of the credential reset request through independent verification with the actual employee.",
+      "Assess whether the compromised credentials were used to access SABIC systems."
+    ],
+    "rationale": "Social engineering targeting HR service desks exploits urgency and authority; NIST Protect requires verification procedures, immediate reporting, and awareness training.",
+    "areaMeasured": "HR service-desk social-engineering resilience.",
+    "ifCorrect": "Shows proper credential-reset verification and proactive social-engineering response.",
+    "ifWrong": "Indicates failure to verify identity before credential reset or delay in escalating the incident."
+  },
+  {
+    "id": 3,
+    "domain": "Prevention & Protection",
+    "scenario": "HR discovers that employee medical and disability records are stored in an unencrypted shared drive accessible to all HR business partners globally.",
+    "steps": [
+      "Notify Corporate Cybersecurity and HR Leadership; restrict access to sensitive medical data immediately.",
+      "Audit access rights to HR drives containing medical and disability records.",
+      "Implement encryption and need-to-know access controls for sensitive employee medical data."
+    ],
+    "rationale": "NIST Protect requires need-to-know access and encryption for sensitive personal health data; unrestricted access creates regulatory and employee-rights risk.",
+    "areaMeasured": "Sensitive employee data classification and HR access-control governance.",
+    "ifCorrect": "Shows alignment with need-to-know principles and employee health data protection.",
+    "ifWrong": "Indicates underestimation of medical data sensitivity or failure to enforce access controls."
+  },
+  {
+    "id": 4,
+    "domain": "Prevention & Protection",
+    "scenario": "Phishing simulation results show that 43% of Corporate HR staff submitted credentials, including individuals with access to payroll, compensation, and employee personal data.",
+    "steps": [
+      "Report findings to HR Leadership and Corporate Cybersecurity; escalate as an HR data-breach risk.",
+      "Analyze results by role to identify highest-risk payroll and compensation users.",
+      "Mandate targeted security awareness training with HR-specific phishing and data-handling scenarios."
+    ],
+    "rationale": "NIST Protect requires continuous awareness; high phishing rates in HR create elevated personal-data breach and payroll-fraud risk requiring structured intervention.",
+    "areaMeasured": "Security awareness maturity and HR human-risk governance.",
+    "ifCorrect": "Shows structured approach to reducing HR human-risk through training and technical controls.",
+    "ifWrong": "Indicates dismissal of awareness gaps or over-reliance on technical controls without addressing human risk."
+  },
+  {
+    "id": 5,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A cyber attack exposes the SABIC global HR system, leaking employee personal data including payroll details, performance records, visa and passport information, and compensation benchmarking data.",
+    "steps": [
+      "Notify Corporate Cybersecurity, Legal, HR Leadership, and SABIC Executive Leadership; activate the cyber crisis escalation process.",
+      "Preserve forensic evidence, restrict HR system access, and suspend automated feeds to payroll and identity systems.",
+      "Determine the scope of personal data exposed, assess regulatory obligations under applicable data-protection laws, and identify affected employees."
+    ],
+    "rationale": "HR data breaches involving personal and compensation data carry significant regulatory and employee-trust risk; NIST incident-response requires governance → containment → investigation → communication.",
+    "areaMeasured": "HR data-breach governance and employee-rights protection.",
+    "ifCorrect": "Shows strong understanding of HR breach protocols, data-protection regulations, and Cybersecurity-led assessment.",
+    "ifWrong": "Indicates weak escalation culture, underestimation of employee data sensitivity, or bypassing Cybersecurity authority."
+  },
+  {
+    "id": 6,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "Ransomware encrypts the HR talent management and recruitment platform, blocking access to candidate data, onboarding workflows, and succession planning materials.",
+    "steps": [
+      "Notify Corporate Cybersecurity; isolate the talent management platform and halt automated HR data feeds.",
+      "Assess which HR workflows are time-critical; implement manual recruitment and onboarding procedures.",
+      "Determine whether candidate and employee personal data was accessed or exfiltrated during the attack."
+    ],
+    "rationale": "Talent platform breaches involve personal data of candidates and employees; NIST Respond/Recover requires containment and validation before restoration, with notification obligations assessed.",
+    "areaMeasured": "Talent system resilience and candidate data breach governance.",
+    "ifCorrect": "Shows understanding of talent system risks and personal data protection obligations.",
+    "ifWrong": "Suggests rushing restoration without forensic validation or ignoring candidate data-exposure obligations."
+  },
+  {
+    "id": 7,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A DDoS attack disrupts the HR employee self-service portal, preventing employees from accessing payslips, benefits information, and leave management globally.",
+    "steps": [
+      "Engage Cybersecurity and DDoS mitigation providers immediately.",
+      "Activate crisis-management governance with HR and Executive leadership.",
+      "Implement alternate employee communication and manual HR service procedures."
+    ],
+    "rationale": "Employee self-service portal outages create immediate employee-experience and operational HR impacts; NIST Respond requires command structure, continuity, and validated recovery.",
+    "areaMeasured": "Leadership decision-making under pressure and HR portal continuity.",
+    "ifCorrect": "Shows balanced thinking: Cybersecurity engagement with employee-service continuity.",
+    "ifWrong": "Indicates reactive behavior, HR service paralysis, or bypassing Cybersecurity governance."
+  },
+  {
+    "id": 8,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "HR access logs reveal that a recently resigned senior manager has downloaded bulk employee compensation and performance review data in the days before departure.",
+    "steps": [
+      "Escalate confidentially to Corporate Cybersecurity, Legal, and HR Leadership.",
+      "Preserve access logs, file-transfer records, and endpoint evidence.",
+      "Investigate the scope of data accessed and potential recipients; assess IP and employee-data exfiltration risk."
+    ],
+    "rationale": "Departing-employee data exfiltration requires evidence preservation and governance before personnel action to protect legal defensibility.",
+    "areaMeasured": "Departing-employee insider-risk governance and HR data protection.",
+    "ifCorrect": "Shows structured evidence handling, legal alignment, and HR data protection response.",
+    "ifWrong": "Indicates impulsive account termination or failure to preserve evidence for legal investigation."
+  },
+  {
+    "id": 9,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupts the payroll processing system during a monthly pay-run, delaying salary disbursement for thousands of SABIC employees globally.",
+    "steps": [
+      "Notify Corporate Cybersecurity and activate the cyber incident response process; assess pay-run timeline risk.",
+      "Implement manual payroll processing for priority disbursements; coordinate with Finance and banking partners.",
+      "Communicate proactively with employees and relevant HR leadership about delays and expected resolution."
+    ],
+    "rationale": "NIST Recover requires validated restoration; proactive employee communication during payroll outages demonstrates HR governance maturity and maintains employee trust.",
+    "areaMeasured": "Payroll continuity and employee-communication governance.",
+    "ifCorrect": "Shows proactive employee engagement and payroll resilience during a cyber incident.",
+    "ifWrong": "Indicates delayed employee communication, missed pay-run processing, or premature system reconnection."
+  },
+  {
+    "id": 10,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "The HR talent management system is restored after a malware incident. HR teams are under pressure to resume active recruitment campaigns and onboarding.",
+    "steps": [
+      "Ensure Corporate Cybersecurity completes forensic validation before talent system access is reauthorized.",
+      "Validate that candidate and employee data integrity, access controls, and audit trails have been fully restored.",
+      "Conduct controlled testing with HR users before full system reactivation."
+    ],
+    "rationale": "NIST recovery guidance requires independent validation before reactivation; premature HR system access risks corrupted candidate data or unauthorized personal data access.",
+    "areaMeasured": "Separation of duties and safe HR system restoration.",
+    "ifCorrect": "Shows understanding of dual validation (Cyber + HR) before talent system reactivation.",
+    "ifWrong": "Suggests unsafe reconnection driven by recruitment pressure without cyber validation."
+  },
+  {
+    "id": 11,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "Following a ransomware incident affecting HR systems, the CHRO requests a post-incident review to assess employee data exposure and strengthen HR data governance.",
+    "steps": [
+      "Confirm that restored HR systems have passed integrity validation before convening the review.",
+      "Monitor HR systems for residual malware indicators and abnormal data-access behavior post-recovery.",
+      "Conduct a governance review with Cybersecurity, Legal, and HR Leadership to evaluate data exposure and control weaknesses."
+    ],
+    "rationale": "NIST Recover and Improve practices require secure restoration validation before governance review; lessons learned drive long-term HR data resilience.",
+    "areaMeasured": "Post-incident HR governance and learning culture.",
+    "ifCorrect": "Shows maturity in structured post-incident review and HR data resilience improvement.",
+    "ifWrong": "Indicates lack of accountability, siloed thinking, or skipping restoration validation before review."
+  },
+  {
+    "id": 12,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupted HR communications during a critical organizational restructuring announcement, creating employee uncertainty and communication gaps.",
+    "steps": [
+      "Activate crisis communication structure; align HR and Executive leadership on impact and recovery plan.",
+      "Brief HR business partners and people managers with consistent messaging on communication delays and mitigation actions.",
+      "Communicate proactively with employees through alternate channels to address uncertainty and maintain trust."
+    ],
+    "rationale": "NIST guidance requires governance and situational awareness first, then internal alignment, external communication, and post-incident improvement.",
+    "areaMeasured": "Employee communication continuity and HR crisis governance.",
+    "ifCorrect": "Shows strong crisis communication and employee-trust management during a cyber incident.",
+    "ifWrong": "Indicates employee-relations risk, or avoidance of proactive communication during restructuring."
+  }
+]

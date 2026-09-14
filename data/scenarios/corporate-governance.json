@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "domain": "Prevention & Protection",
+    "scenario": "A review reveals that board members and committee chairs access governance platforms from personal, unmanaged devices without multi-factor authentication.",
+    "steps": [
+      "Notify Corporate Cybersecurity and Company Secretary; direct immediate enforcement of device and MFA requirements for board platform access.",
+      "Assess all board and committee member access configurations across governance platforms.",
+      "Enforce MFA and managed-device requirements for all governance platform access as an interim control."
+    ],
+    "rationale": "NIST Protect requires strong authentication and endpoint security for sensitive governance platforms; personal unmanaged devices create significant breach risk for board communications.",
+    "areaMeasured": "Board-device security and privileged-access governance.",
+    "ifCorrect": "Shows alignment with enterprise security standards and board-governance platform protection.",
+    "ifWrong": "Indicates underestimation of board-device risk or failure to enforce security standards for directors."
+  },
+  {
+    "id": 2,
+    "domain": "Prevention & Protection",
+    "scenario": "A governance officer discovers that historical shareholder data and AGM voting records stored in a legacy system are accessible without authentication.",
+    "steps": [
+      "Notify Corporate Cybersecurity and Governance Leadership; restrict access to the legacy system immediately.",
+      "Assess the scope of exposed shareholder and AGM data; identify regulatory obligations.",
+      "Implement access controls and encryption for the legacy system as interim protection."
+    ],
+    "rationale": "NIST Protect requires security controls for all systems storing sensitive governance data, including legacy systems; unauthenticated access creates shareholder-rights and regulatory risk.",
+    "areaMeasured": "Legacy system security and shareholder data governance.",
+    "ifCorrect": "Shows understanding of legacy system risks and the need for governance data protection.",
+    "ifWrong": "Indicates dismissal of legacy-system risk or delayed action on unauthenticated access."
+  },
+  {
+    "id": 3,
+    "domain": "Prevention & Protection",
+    "scenario": "A spear-phishing email targeting the SABIC Company Secretary requests urgent validation of board-member credentials ahead of a scheduled board portal upgrade.",
+    "steps": [
+      "Report the incident to Corporate Cybersecurity immediately; do not click links or validate credentials.",
+      "Preserve the phishing email as forensic evidence; assess whether board portal systems have been compromised.",
+      "Investigate whether other governance team members received similar phishing attempts."
+    ],
+    "rationale": "Spear-phishing targeting governance staff exploits access to board credentials and governance systems; NIST Protect requires immediate reporting, investigation, and technical controls.",
+    "areaMeasured": "Executive-governance targeted threat awareness.",
+    "ifCorrect": "Shows proper incident-reporting behavior and proactive security response for governance communications.",
+    "ifWrong": "Indicates failure to recognize governance-targeted phishing or delay in escalation."
+  },
+  {
+    "id": 4,
+    "domain": "Prevention & Protection",
+    "scenario": "Third-party governance advisory firms engaged by SABIC are found to be storing board and committee minutes on personal cloud storage platforms outside of SABIC's approved systems.",
+    "steps": [
+      "Notify Corporate Cybersecurity and Governance Leadership; instruct advisory firms to immediately secure or delete board materials from unapproved platforms.",
+      "Preserve evidence of the exposure; assess what board and committee materials were stored and their sensitivity.",
+      "Evaluate regulatory and fiduciary obligations arising from the exposure of governance documents."
+    ],
+    "rationale": "Third-party storage of board materials on unapproved platforms creates fiduciary and regulatory risk; NIST Govern and Protect require structured vendor-security governance.",
+    "areaMeasured": "Third-party governance information security and vendor governance.",
+    "ifCorrect": "Shows understanding of vendor-security risks for board-sensitive materials.",
+    "ifWrong": "Indicates overreliance on advisory firm compliance without governance or security requirements."
+  },
+  {
+    "id": 5,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A cyber attack exposes the SABIC Board of Directors' secure communications platform, compromising confidential resolutions, governance decisions, and director personal data.",
+    "steps": [
+      "Notify Corporate Cybersecurity, Legal, Company Secretary, and SABIC Executive Leadership; activate the cyber crisis escalation process.",
+      "Preserve forensic evidence, restrict board platform access, and assess whether active board sessions are compromised.",
+      "Determine the scope of governance information exposed, assess regulatory and fiduciary obligations, and identify all affected directors."
+    ],
+    "rationale": "Board communication breaches carry fiduciary, regulatory, and reputational risk at the highest level; NIST incident-response requires governance → containment → investigation → communication.",
+    "areaMeasured": "Board-level breach governance and fiduciary duty response.",
+    "ifCorrect": "Shows strong understanding of board breach protocols, fiduciary obligations, and Cybersecurity-led assessment.",
+    "ifWrong": "Indicates weak escalation culture, underestimation of fiduciary exposure, or bypassing Cybersecurity authority."
+  },
+  {
+    "id": 6,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "Ransomware encrypts the corporate governance document repository, locking access to shareholder resolutions, articles of association, and regulatory filings.",
+    "steps": [
+      "Notify Corporate Cybersecurity; isolate the governance document repository immediately.",
+      "Assess which shareholder and regulatory documents are time-sensitive; implement manual governance procedures for critical filings.",
+      "Determine whether confidential governance documents were accessed or exfiltrated during the attack."
+    ],
+    "rationale": "Governance document breaches carry regulatory filing and shareholder-rights implications; NIST Respond/Recover requires containment and validation before restoration.",
+    "areaMeasured": "Regulatory filing continuity and governance breach response.",
+    "ifCorrect": "Shows understanding of governance document sensitivity and regulatory-reporting obligations.",
+    "ifWrong": "Suggests rushing restoration without forensic validation or ignoring regulatory-filing obligations."
+  },
+  {
+    "id": 7,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A DDoS attack disrupts the shareholder communication and AGM voting platform ahead of SABIC's Annual General Meeting.",
+    "steps": [
+      "Engage Cybersecurity and DDoS mitigation providers immediately.",
+      "Activate crisis-management governance with Company Secretary and Executive leadership.",
+      "Implement alternate AGM participation and voting procedures to maintain shareholder rights."
+    ],
+    "rationale": "AGM disruptions carry shareholder rights and regulatory implications; NIST Respond requires command structure, continuity, and validated recovery.",
+    "areaMeasured": "Shareholder-rights governance and AGM continuity leadership.",
+    "ifCorrect": "Shows balanced thinking: Cybersecurity engagement with shareholder-rights continuity.",
+    "ifWrong": "Indicates reactive behavior, AGM governance paralysis, or bypassing Cybersecurity."
+  },
+  {
+    "id": 8,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "Access logs reveal that a governance team member has been sharing draft board resolutions and committee minutes with an external party without authorization.",
+    "steps": [
+      "Escalate confidentially to Corporate Cybersecurity, Legal, and SABIC Executive Leadership.",
+      "Preserve access logs, email records, and document-sharing evidence.",
+      "Investigate the scope of unauthorized disclosure and potential recipients of board governance information."
+    ],
+    "rationale": "Unauthorized disclosure of board governance information carries fiduciary, legal, and regulatory consequences; evidence preservation and governance are critical before any personnel action.",
+    "areaMeasured": "Insider-risk governance and board-information confidentiality.",
+    "ifCorrect": "Shows structured evidence handling, legal alignment, and board-information protection.",
+    "ifWrong": "Indicates impulsive personnel action or failure to preserve evidence for legal proceedings."
+  },
+  {
+    "id": 9,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupts the governance document repository during a critical board resolution approval period, blocking access to draft resolutions and shareholder circulars.",
+    "steps": [
+      "Notify Corporate Cybersecurity and activate the cyber incident response process; assess which resolutions are time-critical.",
+      "Implement manual governance procedures: identify alternate secure channels for resolution approval and shareholder communication.",
+      "Communicate proactively with Legal and regulatory authorities regarding any potential delays in shareholder circulars or regulatory filings."
+    ],
+    "rationale": "NIST Recover functions require validated restoration; proactive regulatory communication during outages demonstrates governance maturity and reduces penalty risk.",
+    "areaMeasured": "Governance continuity and regulatory communication during recovery.",
+    "ifCorrect": "Shows proactive regulatory engagement and governance-continuity maturity.",
+    "ifWrong": "Indicates delayed regulatory communication, missed filing deadlines, or premature repository reconnection."
+  },
+  {
+    "id": 10,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "The board communications platform is restored after a malware incident. Board members and committees are requesting immediate access to resume scheduled meetings.",
+    "steps": [
+      "Ensure Corporate Cybersecurity completes forensic validation before board platform access is reauthorized.",
+      "Validate that all board communications, access controls, and audit trails have been fully restored and secured.",
+      "Conduct controlled access testing with selected board users before full platform reactivation."
+    ],
+    "rationale": "NIST recovery guidance requires independent validation before reactivation; premature board platform access risks data integrity issues or residual compromise.",
+    "areaMeasured": "Separation of duties and safe board-platform restoration.",
+    "ifCorrect": "Shows understanding of dual validation (Cyber + Governance) before board platform reactivation.",
+    "ifWrong": "Suggests unsafe board platform reconnection driven by meeting schedule pressure without cyber validation."
+  },
+  {
+    "id": 11,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "Following a ransomware incident affecting corporate governance systems, the Board Audit Committee requests a post-incident governance review.",
+    "steps": [
+      "Confirm that restored governance systems have passed integrity validation before convening the review.",
+      "Monitor governance platforms for residual malware indicators and abnormal access behavior post-recovery.",
+      "Conduct a governance review with Cybersecurity, Legal, and Company Secretary to evaluate the incident's governance impact and response effectiveness."
+    ],
+    "rationale": "NIST Recover and Improve practices require secure restoration validation before governance review; lessons learned strengthen board-governance cyber resilience.",
+    "areaMeasured": "Post-incident board governance and continuous improvement culture.",
+    "ifCorrect": "Shows maturity in structured post-incident review and board-governance resilience improvement.",
+    "ifWrong": "Indicates lack of accountability, premature board review, or skipping restoration validation."
+  },
+  {
+    "id": 12,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident delayed the distribution of critical board materials ahead of a scheduled board meeting, creating governance and regulatory concerns.",
+    "steps": [
+      "Activate crisis communication structure; align Company Secretary and Executive Leadership on impact and recovery plan.",
+      "Brief Board Chairman, Legal, and relevant committee chairs with consistent messaging on delays and mitigation actions.",
+      "Communicate proactively with regulatory authorities regarding any governance timeline delays."
+    ],
+    "rationale": "NIST guidance requires governance and situational awareness first, then internal alignment, external communication, and post-incident improvement.",
+    "areaMeasured": "Board-communication continuity and governance crisis management.",
+    "ifCorrect": "Shows strong crisis communication and board-governance management during a cyber incident.",
+    "ifWrong": "Indicates governance and regulatory risk, or avoidance of proactive board and regulatory communication."
+  }
+]

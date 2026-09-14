@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "domain": "Prevention & Protection",
+    "scenario": "A review reveals that access rights to shared finance, HR, and procurement systems have not been recertified in over 18 months, with many former employees still active.",
+    "steps": [
+      "Escalate to Shared Services Leadership and Corporate Cybersecurity; initiate an immediate access-rights remediation directive.",
+      "Conduct a rapid entitlement review across all shared platforms to identify stale, excessive, and orphaned accounts.",
+      "Implement interim controls: disable or restrict high-risk accounts pending full recertification."
+    ],
+    "rationale": "NIST Protect functions require least-privilege enforcement and continuous identity governance to reduce insider-threat and unauthorized-access risk.",
+    "areaMeasured": "Identity governance and access-control maturity.",
+    "ifCorrect": "Shows alignment with enterprise identity governance and least-privilege principles.",
+    "ifWrong": "Indicates fragmented access controls or underestimation of stale-account risk."
+  },
+  {
+    "id": 2,
+    "domain": "Prevention & Protection",
+    "scenario": "A Shared Services manager reports that vendor accounts used for platform maintenance retain persistent remote-access credentials that are never rotated.",
+    "steps": [
+      "Notify Corporate Cybersecurity and Shared Services Leadership; issue an immediate directive to review and restrict vendor remote-access credentials.",
+      "Audit all vendor accounts across shared platforms; identify those with persistent, unrotated, or over-privileged access.",
+      "Implement interim controls: enforce credential rotation, apply time-limited access windows, and enable session monitoring."
+    ],
+    "rationale": "Persistent third-party credentials represent a critical attack vector; NIST Govern and Protect functions require structured vendor-access management and privileged-access controls.",
+    "areaMeasured": "Third-party access governance and privileged-account security.",
+    "ifCorrect": "Shows understanding of vendor-access risks and the need for PAM controls.",
+    "ifWrong": "Indicates overreliance on trust-based access without governance or monitoring."
+  },
+  {
+    "id": 3,
+    "domain": "Prevention & Protection",
+    "scenario": "Phishing simulation results show that 38% of Shared Services staff clicked a link and submitted credentials, significantly above the SABIC threshold.",
+    "steps": [
+      "Report findings to Shared Services Leadership and Corporate Cybersecurity; escalate as a security awareness risk.",
+      "Analyze phishing results by department, role, and seniority to identify highest-risk cohorts.",
+      "Mandate targeted security awareness training with role-specific phishing scenarios for high-risk groups."
+    ],
+    "rationale": "NIST Protect requires continuous workforce security awareness; click rates above threshold indicate systemic awareness gaps requiring structured intervention.",
+    "areaMeasured": "Security awareness maturity and human-risk governance.",
+    "ifCorrect": "Shows structured approach to reducing human-risk through training and technical controls.",
+    "ifWrong": "Indicates dismissal of awareness gaps or reliance solely on technical controls without addressing human risk."
+  },
+  {
+    "id": 4,
+    "domain": "Prevention & Protection",
+    "scenario": "A Shared Services employee reports receiving a suspicious call from someone claiming to be IT support, requesting remote access credentials to resolve a 'system alert'.",
+    "steps": [
+      "Instruct the employee not to share credentials; report the incident to Corporate Cybersecurity immediately.",
+      "Preserve details of the call: caller ID, timing, and exact requests made.",
+      "Assess whether other employees received similar calls and determine if a targeted vishing campaign is underway."
+    ],
+    "rationale": "Social-engineering attacks targeting shared-service staff can compromise multiple BU systems; NIST Protect requires immediate reporting, evidence collection, and awareness reinforcement.",
+    "areaMeasured": "Social-engineering awareness and incident reporting culture.",
+    "ifCorrect": "Shows proper incident-reporting behavior and cross-functional awareness response.",
+    "ifWrong": "Indicates lack of social-engineering awareness or failure to escalate potential vishing attacks."
+  },
+  {
+    "id": 5,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A centralized HR portal shared across multiple SABIC business units is breached, exposing employee personal data including payroll details, ID numbers, and performance records.",
+    "steps": [
+      "Notify Corporate Cybersecurity, Legal, HR Leadership, and SABIC Executive Leadership; activate the cyber crisis escalation process.",
+      "Preserve forensic evidence, restrict access to the shared HR portal, and suspend affected integrations with downstream payroll and ERP systems.",
+      "Determine the scope of data exposed, identify affected employees, and assess regulatory obligations under applicable data-protection laws."
+    ],
+    "rationale": "The sequence follows NIST incident-response principles: governance → containment → investigation → communication/remediation. Shared-service breaches affect multiple BUs simultaneously, making rapid containment critical.",
+    "areaMeasured": "Data-breach governance across shared platforms.",
+    "ifCorrect": "Shows strong understanding of cross-BU breach protocols, regulatory exposure, and Cybersecurity-led containment.",
+    "ifWrong": "Indicates weak escalation culture, underestimation of multi-BU data exposure, or bypassing Cybersecurity authority."
+  },
+  {
+    "id": 6,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "The shared IT ticketing and service-desk platform is hit by ransomware, halting IT support operations across all SABIC corporate functions.",
+    "steps": [
+      "Notify Corporate Cybersecurity and activate the cyber incident response process; isolate the affected service-desk platform.",
+      "Escalate to CERT; assess lateral movement across shared IT infrastructure and activate business continuity procedures for IT support.",
+      "Identify impacted functions, triage critical service requests manually, and validate whether other shared platforms are compromised."
+    ],
+    "rationale": "Shared services outages cascade across multiple BUs; NIST Respond/Recover guidance requires containment before restoration to prevent reinfection.",
+    "areaMeasured": "Crisis chain-of-command and shared-platform resilience.",
+    "ifCorrect": "Shows proper escalation discipline and multi-BU impact awareness.",
+    "ifWrong": "Suggests reliance on IT operations alone for cyber decisions or hesitation to escalate."
+  },
+  {
+    "id": 7,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A DDoS attack disrupts the shared finance and procurement ERP platform, blocking purchase orders and financial reporting across SABIC business units.",
+    "steps": [
+      "Engage Cybersecurity and DDoS mitigation service providers immediately.",
+      "Activate crisis-management governance with executive ownership across affected BUs.",
+      "Implement manual procurement and financial reporting workarounds to sustain continuity."
+    ],
+    "rationale": "Operational resilience best practices require command structure first, then stabilization and continuity, then validated recovery.",
+    "areaMeasured": "Leadership decision-making under pressure and shared-service continuity.",
+    "ifCorrect": "Shows balanced thinking: Cybersecurity engagement combined with operational continuity across BUs.",
+    "ifWrong": "Indicates reactive behavior, operational paralysis, or bypassing Cybersecurity governance."
+  },
+  {
+    "id": 8,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "Unusual bulk data downloads from the shared document management system are linked to a contractor account with elevated access rights.",
+    "steps": [
+      "Escalate confidentially to Corporate Cybersecurity, Legal, HR, and authorized leadership.",
+      "Preserve access logs, endpoint evidence, and file-transfer activity records.",
+      "Investigate the scope, intent, and legitimacy of the activity while maintaining confidentiality."
+    ],
+    "rationale": "Insider-threat investigations require evidence preservation and governance before containment to protect investigative integrity and legal defensibility.",
+    "areaMeasured": "Insider-risk governance and due-process maturity in shared environments.",
+    "ifCorrect": "Shows proper evidence handling, legal alignment, and structured insider-risk response.",
+    "ifWrong": "Indicates impulsive action, premature account termination, or mishandling of sensitive investigations."
+  },
+  {
+    "id": 9,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupts the shared payroll processing platform, delaying salary disbursement for employees across multiple SABIC BUs.",
+    "steps": [
+      "Notify Corporate Cybersecurity and activate the cyber incident response process; isolate the payroll platform.",
+      "Assess the scope of payroll disruption, identify affected pay cycles, and validate whether the incident remains active.",
+      "Implement business continuity procedures: coordinate with Finance and HR to execute manual payroll processing for priority disbursements."
+    ],
+    "rationale": "Shared-service disruptions have immediate employee and reputational impact; NIST Recover functions require validated restoration before reactivation.",
+    "areaMeasured": "Business continuity and employee-impact governance.",
+    "ifCorrect": "Shows balanced recovery thinking with employee-centric communication.",
+    "ifWrong": "Indicates operational paralysis, delayed communication, or premature system reconnection."
+  },
+  {
+    "id": 10,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A shared collaboration platform is compromised and restored after a malware incident. Business units are requesting immediate access restoration.",
+    "steps": [
+      "Ensure Corporate Cybersecurity completes forensic validation before any reconnection is authorized.",
+      "Validate malware removal, credential resets, patch application, and baseline hardening on the platform.",
+      "Conduct controlled testing with representative BU users before broad access is restored."
+    ],
+    "rationale": "NIST OT/IT recovery guidance prioritizes evidence preservation and independent validation; premature reconnection risks reinfection across all BUs sharing the platform.",
+    "areaMeasured": "Separation of duties and safe restoration governance.",
+    "ifCorrect": "Shows understanding of dual validation (Cyber + Operations) before platform restoration.",
+    "ifWrong": "Suggests unsafe reconnection driven by business pressure without cyber validation."
+  },
+  {
+    "id": 11,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A ransomware incident disrupts shared IT operations. After recovery, BU leaders request a review of what happened and how to prevent recurrence.",
+    "steps": [
+      "Confirm that restored systems have passed integrity validation and operational safety testing before convening a review.",
+      "Monitor shared IT environments for residual malware indicators and abnormal activity post-recovery.",
+      "Conduct a governance review with Cybersecurity, BC/DR, and Shared Services leadership to evaluate recovery effectiveness and decision-making."
+    ],
+    "rationale": "NIST Recover and Improve practices require secure restoration validation before governance review; lessons-learned drive long-term resilience improvements.",
+    "areaMeasured": "Post-incident governance and continuous improvement culture.",
+    "ifCorrect": "Shows maturity in structured post-incident review and resilience improvement.",
+    "ifWrong": "Indicates lack of accountability, siloed thinking, or skipping validation before review."
+  },
+  {
+    "id": 12,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident delays internal financial reporting submissions from Shared Services Finance to Corporate, affecting consolidation timelines.",
+    "steps": [
+      "Activate the crisis communication structure; align Shared Services and Corporate Finance leadership on impact and recovery plan.",
+      "Brief internal stakeholders with consistent messaging on reporting delays, mitigation actions, and revised timelines.",
+      "Communicate proactively with Corporate Finance on alternative submission procedures and regulatory-reporting risks."
+    ],
+    "rationale": "NIST guidance requires governance and situational awareness first, then internal alignment, external communication, and post-incident improvement.",
+    "areaMeasured": "Stakeholder communication and financial-reporting continuity.",
+    "ifCorrect": "Shows strong crisis communication and corporate-reporting governance.",
+    "ifWrong": "Indicates reputational risk, regulatory exposure, or avoidance of proactive communication."
+  }
+]

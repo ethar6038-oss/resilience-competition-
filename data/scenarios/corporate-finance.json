@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "domain": "Prevention & Protection",
+    "scenario": "An internal audit reveals that Finance ERP access rights include multiple users with combined create-and-approve payment authorities, violating segregation-of-duties controls.",
+    "steps": [
+      "Escalate to Finance Leadership and Corporate Cybersecurity; direct immediate remediation of segregation-of-duties violations.",
+      "Conduct a full entitlement review of Finance ERP access across all payment workflow roles.",
+      "Implement interim controls: separate create-and-approve authorities and disable combined-role access immediately."
+    ],
+    "rationale": "NIST Protect and financial-control frameworks require segregation of duties in payment workflows; combined authorities represent a critical financial-fraud risk.",
+    "areaMeasured": "Segregation of duties and financial-control governance.",
+    "ifCorrect": "Shows alignment with financial-control standards and enterprise identity governance.",
+    "ifWrong": "Indicates fragmented access controls or underestimation of payment-fraud risk from SOD violations."
+  },
+  {
+    "id": 2,
+    "domain": "Prevention & Protection",
+    "scenario": "A Finance manager receives a business email compromise (BEC) email purportedly from the CFO requesting an urgent wire transfer to a new supplier account.",
+    "steps": [
+      "Do not process the transfer; report the BEC attempt to Corporate Cybersecurity and Finance Leadership immediately.",
+      "Validate the request through an independent communication channel with the CFO using known contact details.",
+      "Preserve the fraudulent email as forensic evidence; assess whether other Finance staff received similar requests."
+    ],
+    "rationale": "BEC attacks targeting Finance exploit authority and urgency; NIST Protect requires immediate reporting, independent verification, and enhanced payment controls to prevent financial loss.",
+    "areaMeasured": "Executive-impersonation fraud awareness and payment-control maturity.",
+    "ifCorrect": "Shows proper BEC-response behavior and proactive payment-control strengthening.",
+    "ifWrong": "Indicates failure to verify the request independently or processing the transfer without authorization."
+  },
+  {
+    "id": 3,
+    "domain": "Prevention & Protection",
+    "scenario": "A Finance system audit identifies that sensitive financial models and M&A transaction data are stored in shared drives accessible to all Finance department employees.",
+    "steps": [
+      "Notify Finance Leadership and Corporate Cybersecurity; restrict access to sensitive financial models and M&A data immediately.",
+      "Audit access rights to shared financial drives; identify all users with unnecessary access to M&A and forecasting materials.",
+      "Implement need-to-know access controls for sensitive financial and M&A information."
+    ],
+    "rationale": "NIST Protect requires need-to-know access for sensitive financial information; unrestricted access to M&A data creates significant insider-threat and market-sensitivity risk.",
+    "areaMeasured": "Financial data classification and access-control governance.",
+    "ifCorrect": "Shows alignment with need-to-know principles and financial information-security governance.",
+    "ifWrong": "Indicates underestimation of M&A data sensitivity or failure to enforce access controls."
+  },
+  {
+    "id": 4,
+    "domain": "Prevention & Protection",
+    "scenario": "Phishing simulation results show that 41% of Corporate Finance staff submitted credentials, including several treasury and accounts-payable users.",
+    "steps": [
+      "Report findings to Finance Leadership and Corporate Cybersecurity; escalate as a financial-fraud risk.",
+      "Analyze results by role to identify highest-risk treasury, accounts-payable, and financial-reporting users.",
+      "Mandate targeted security awareness training with Finance-specific BEC and phishing scenarios."
+    ],
+    "rationale": "NIST Protect requires continuous awareness; high phishing rates in Finance create elevated payment-fraud and credential-compromise risk requiring structured intervention.",
+    "areaMeasured": "Security awareness maturity and Finance human-risk governance.",
+    "ifCorrect": "Shows structured approach to reducing financial human-risk through training and technical controls.",
+    "ifWrong": "Indicates dismissal of awareness gaps or over-reliance on technical controls without addressing human risk."
+  },
+  {
+    "id": 5,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A cyber attack compromises the Corporate Finance ERP system, exposing confidential financial forecasts, treasury positions, and M&A transaction data.",
+    "steps": [
+      "Notify Corporate Cybersecurity, Legal, Finance Leadership, and SABIC Executive Leadership; activate the cyber crisis escalation process.",
+      "Preserve forensic evidence, restrict ERP access, and suspend automated financial feeds to downstream systems.",
+      "Determine the scope of financial data exposed, assess market-sensitivity and regulatory implications, and identify all affected systems."
+    ],
+    "rationale": "Financial data breaches carry significant market-sensitivity, regulatory, and reputational risk; NIST incident-response requires governance → containment → investigation → communication.",
+    "areaMeasured": "Financial data-breach governance and market-sensitivity awareness.",
+    "ifCorrect": "Shows strong understanding of financial breach protocols, regulatory exposure, and Cybersecurity-led assessment.",
+    "ifWrong": "Indicates weak escalation culture, underestimation of market-sensitivity impact, or bypassing Cybersecurity authority."
+  },
+  {
+    "id": 6,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "Ransomware encrypts the Corporate Finance treasury management system during a critical payment settlement window, blocking payment processing.",
+    "steps": [
+      "Notify Corporate Cybersecurity; isolate the treasury management system and halt automated payment processing.",
+      "Activate the financial crisis-management process; assess which payments are time-critical and implement manual payment authorization procedures.",
+      "Engage banking partners to place precautionary holds on pending transactions and validate payment integrity."
+    ],
+    "rationale": "Treasury system compromise carries immediate financial loss and payment-fraud risk; NIST Respond/Recover requires containment before restoration, with banking-partner coordination to mitigate fraud exposure.",
+    "areaMeasured": "Treasury resilience and financial-fraud prevention governance.",
+    "ifCorrect": "Shows understanding of treasury-system risks, banking-partner coordination, and payment-fraud mitigation.",
+    "ifWrong": "Suggests rushing treasury restoration without forensic validation or underestimating payment-fraud risk."
+  },
+  {
+    "id": 7,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A DDoS attack disrupts the Corporate Finance reporting portal during a financial close period, blocking consolidation submissions from business units.",
+    "steps": [
+      "Engage Cybersecurity and DDoS mitigation providers immediately.",
+      "Activate crisis-management governance with Finance and Executive leadership.",
+      "Implement manual consolidation submission procedures and communicate adjusted close timelines to BUs."
+    ],
+    "rationale": "Financial close disruptions carry regulatory and audit risk; NIST Respond requires command structure, continuity, and validated recovery before full reactivation.",
+    "areaMeasured": "Financial-close resilience and leadership decision-making under pressure.",
+    "ifCorrect": "Shows balanced thinking: Cybersecurity engagement with financial-close continuity.",
+    "ifWrong": "Indicates reactive behavior, close-process paralysis, or bypassing Cybersecurity governance."
+  },
+  {
+    "id": 8,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A Finance employee's credentials are compromised, and the attacker uses them to initiate unauthorized wire transfers totalling USD 2.3 million before detection.",
+    "steps": [
+      "Notify Corporate Cybersecurity, Legal, Finance Leadership, and banking partners immediately; place emergency holds on outgoing transactions.",
+      "Preserve forensic evidence: compromised credentials, transaction logs, and banking communication records.",
+      "Investigate the scope of unauthorized transactions; engage banking partners to initiate fraud-recovery procedures."
+    ],
+    "rationale": "Payment fraud requires immediate banking-partner coordination for fund recovery; NIST Respond requires containment and evidence preservation before investigation to maximize recovery prospects.",
+    "areaMeasured": "Payment-fraud response and financial-crime governance.",
+    "ifCorrect": "Shows structured fraud-response with banking-partner coordination and evidence handling.",
+    "ifWrong": "Indicates delayed banking notification, failure to preserve evidence, or underestimation of fund-recovery window."
+  },
+  {
+    "id": 9,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupts the Corporate Finance consolidation platform during year-end close, affecting financial reporting timelines for SABIC's annual results.",
+    "steps": [
+      "Notify Corporate Cybersecurity and activate the cyber incident response process; assess close-process timeline risk.",
+      "Implement manual consolidation procedures and communicate adjusted timelines to BU Finance teams and external auditors.",
+      "Engage external auditors and regulatory bodies regarding potential reporting delays and alternative submission procedures."
+    ],
+    "rationale": "Year-end close disruptions carry regulatory and audit risk; NIST Recover requires validated restoration with proactive auditor and regulatory communication.",
+    "areaMeasured": "Financial-reporting continuity and audit-relationship governance.",
+    "ifCorrect": "Shows proactive auditor engagement and financial-reporting resilience during a cyber incident.",
+    "ifWrong": "Indicates delayed auditor communication, missed filing deadlines, or premature platform reconnection."
+  },
+  {
+    "id": 10,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "Following an ERP compromise, the Finance system is cleaned and restored. The Finance team is under pressure to complete overdue payment runs immediately.",
+    "steps": [
+      "Ensure Corporate Cybersecurity completes forensic validation before any payment processing is reactivated.",
+      "Validate that all payment controls, access rights, and ERP configurations have been restored to their pre-incident state.",
+      "Conduct controlled end-to-end payment testing before reactivating live payment runs."
+    ],
+    "rationale": "NIST recovery guidance requires independent validation before reactivation; premature payment processing after ERP compromise risks fraud, duplicate payments, or unauthorized transactions.",
+    "areaMeasured": "Separation of duties and safe ERP payment restoration.",
+    "ifCorrect": "Shows understanding of dual validation (Cyber + Finance) before payment-processing reactivation.",
+    "ifWrong": "Suggests unsafe payment reactivation driven by operational pressure without cyber validation."
+  },
+  {
+    "id": 11,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "Following a ransomware incident affecting Finance systems, the CFO requests a post-incident review to assess financial exposure and control weaknesses.",
+    "steps": [
+      "Confirm that restored Finance systems have passed integrity and payment-control validation before convening the review.",
+      "Monitor Finance systems for residual malware indicators and abnormal transaction behavior post-recovery.",
+      "Conduct a governance review with Cybersecurity, Internal Audit, and Finance Leadership to evaluate financial exposure and control weaknesses."
+    ],
+    "rationale": "NIST Recover and Improve practices require secure restoration validation before governance review; lessons learned drive long-term financial resilience.",
+    "areaMeasured": "Post-incident financial governance and learning culture.",
+    "ifCorrect": "Shows maturity in structured post-incident review and Finance resilience improvement.",
+    "ifWrong": "Indicates lack of accountability, siloed thinking, or skipping restoration validation before review."
+  },
+  {
+    "id": 12,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident delays critical financial reporting to SABIC's board and external investors during an earnings period.",
+    "steps": [
+      "Activate crisis communication structure; align Finance and Executive leadership on reporting impact and recovery plan.",
+      "Brief Board Finance Committee, Investor Relations, and External Auditors with consistent messaging on delays and mitigation actions.",
+      "Communicate proactively with investors and regulatory bodies regarding reporting delays and recovery timeline."
+    ],
+    "rationale": "NIST guidance requires governance and situational awareness first, then internal alignment, external communication, and post-incident improvement.",
+    "areaMeasured": "Financial reporting continuity and investor-relations crisis governance.",
+    "ifCorrect": "Shows strong crisis communication and financial-reporting governance during a cyber incident.",
+    "ifWrong": "Indicates reputational and regulatory risk, or avoidance of proactive board and investor communication."
+  }
+]

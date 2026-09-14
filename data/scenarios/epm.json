@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "domain": "Prevention & Protection",
+    "scenario": "An E&PM security review reveals that EPC contractors and engineering consultants have persistent, unrevoked access to the EDMS and project collaboration tools long after their project assignments ended.",
+    "steps": [
+      "Escalate to E&PM Leadership and Corporate Cybersecurity; direct immediate access remediation.",
+      "Conduct a full entitlement review of EPC contractor and consultant access across all E&PM platforms.",
+      "Disable all stale contractor accounts pending formal access review and project-assignment validation."
+    ],
+    "rationale": "NIST Protect requires least-privilege and lifecycle governance for third-party access; persistent contractor access creates significant engineering IP and project-data risk.",
+    "areaMeasured": "Contractor access lifecycle and engineering-data governance.",
+    "ifCorrect": "Shows alignment with enterprise access governance and capital project IP protection.",
+    "ifWrong": "Indicates weak contractor access governance or underestimation of persistent-access risk."
+  },
+  {
+    "id": 2,
+    "domain": "Prevention & Protection",
+    "scenario": "An E&PM engineer reports that project documents containing classified FEED study data are being shared with EPC contractors via personal email accounts due to EDMS access issues.",
+    "steps": [
+      "Notify E&PM Leadership and Corporate Cybersecurity; immediately direct engineers to cease sharing project data via personal email.",
+      "Assess what FEED data has been shared externally and which contractors received it.",
+      "Resolve the EDMS access issue and implement controlled contractor data-sharing procedures."
+    ],
+    "rationale": "NIST Protect requires secure communication channels for sensitive engineering data; personal email sharing of FEED data creates IP, contractual, and regulatory risk.",
+    "areaMeasured": "Engineering data-sharing security and IP-protection governance.",
+    "ifCorrect": "Shows alignment with secure-communication principles and engineering data governance.",
+    "ifWrong": "Indicates underestimation of FEED data sensitivity or failure to enforce secure-sharing channels."
+  },
+  {
+    "id": 3,
+    "domain": "Prevention & Protection",
+    "scenario": "An E&PM IT assessment identifies that project management software used across major capital projects is running on servers with critical unpatched vulnerabilities.",
+    "steps": [
+      "Escalate to E&PM IT and Corporate Cybersecurity; direct immediate risk assessment and compensating controls.",
+      "Conduct a rapid inventory of all unpatched project management servers.",
+      "Implement compensating controls: network isolation, enhanced monitoring, and restricted remote access for vulnerable systems."
+    ],
+    "rationale": "NIST Protect requires vulnerability management for project management infrastructure; unpatched servers hosting capital project data represent critical exposure.",
+    "areaMeasured": "Vulnerability management and project infrastructure security governance.",
+    "ifCorrect": "Shows alignment with enterprise vulnerability management and proactive patching governance.",
+    "ifWrong": "Indicates fragmented patch management or underestimation of project infrastructure vulnerability risk."
+  },
+  {
+    "id": 4,
+    "domain": "Prevention & Protection",
+    "scenario": "Phishing simulation results show that 40% of E&PM project engineers and commercial staff submitted credentials, including individuals with access to EPC bids and capital project financials.",
+    "steps": [
+      "Report findings to E&PM Leadership and Corporate Cybersecurity; escalate as a capital project IP and financial risk.",
+      "Analyze results by role to identify highest-risk engineering and commercial users.",
+      "Mandate targeted security awareness training with E&PM-specific phishing and project-data scenarios."
+    ],
+    "rationale": "NIST Protect requires continuous awareness; high phishing rates in E&PM create elevated engineering IP and capital project financial risk requiring structured intervention.",
+    "areaMeasured": "Security awareness maturity and E&PM human-risk governance.",
+    "ifCorrect": "Shows structured approach to reducing engineering human-risk through training and technical controls.",
+    "ifWrong": "Indicates dismissal of awareness gaps or over-reliance on technical controls without addressing human risk."
+  },
+  {
+    "id": 5,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A cyber attack targets the E&PM project collaboration platform, exposing confidential FEED studies, EPC contractor bids, and capital project schedules.",
+    "steps": [
+      "Notify Corporate Cybersecurity, Legal, E&PM Leadership, and SABIC Executive Leadership; activate the cyber crisis escalation process.",
+      "Preserve forensic evidence, restrict project platform access, and suspend automated feeds to EPC contractor systems.",
+      "Determine the scope of project IP and bid data exposed; assess competitive, contractual, and regulatory implications."
+    ],
+    "rationale": "NIST incident-response principles: governance → containment → investigation → communication. EPC bid data exposure creates competitive, contractual, and regulatory risk.",
+    "areaMeasured": "Capital project data-breach governance and bid-integrity protection.",
+    "ifCorrect": "Shows strong understanding of capital project breach protocols and Cybersecurity-led assessment.",
+    "ifWrong": "Indicates weak escalation culture, underestimation of competitive data exposure, or bypassing Cybersecurity authority."
+  },
+  {
+    "id": 6,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "Ransomware encrypts the E&PM engineering document management system (EDMS), locking access to P&IDs, engineering drawings, and as-built documentation for active capital projects.",
+    "steps": [
+      "Notify Corporate Cybersecurity; isolate the EDMS and halt automated document-feed integrations.",
+      "Assess which engineering documents are critical for active construction and commissioning activities; implement manual document-access procedures.",
+      "Determine whether proprietary engineering designs or contractor documentation were accessed or exfiltrated."
+    ],
+    "rationale": "EDMS compromise threatens construction safety, engineering IP, and capital project timelines; NIST Respond/Recover requires containment, validation, and contractor notification.",
+    "areaMeasured": "EDMS resilience and engineering IP breach governance.",
+    "ifCorrect": "Shows understanding of EDMS risks, construction-safety implications, and contractor-notification obligations.",
+    "ifWrong": "Suggests rushing EDMS restoration without forensic validation or ignoring engineering-data exposure."
+  },
+  {
+    "id": 7,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A DDoS attack disrupts the E&PM project management and reporting platform during a critical capital project milestone review with SABIC Executive leadership.",
+    "steps": [
+      "Engage Cybersecurity and DDoS mitigation providers immediately.",
+      "Activate crisis-management governance with E&PM and Executive leadership.",
+      "Implement alternate project-reporting procedures for the milestone review."
+    ],
+    "rationale": "Capital project milestone disruptions affect executive decision-making and EPC contractor coordination; NIST Respond requires command structure, continuity, and validated recovery.",
+    "areaMeasured": "Leadership decision-making under pressure and capital project continuity.",
+    "ifCorrect": "Shows balanced thinking: Cybersecurity engagement with capital project-reporting continuity.",
+    "ifWrong": "Indicates reactive behavior, project-reporting paralysis, or bypassing Cybersecurity governance."
+  },
+  {
+    "id": 8,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "E&PM system logs reveal that an EPC contractor's shared project access has been used to download the full engineering basis and cost estimates for an upcoming mega-project.",
+    "steps": [
+      "Escalate confidentially to Corporate Cybersecurity, Legal, E&PM Leadership, and Procurement.",
+      "Preserve access logs, file-transfer records, and contractor session evidence.",
+      "Investigate the scope of downloaded data and assess competitive and contractual implications."
+    ],
+    "rationale": "EPC contractor data exfiltration requires evidence preservation and governance before contractual action to protect legal defensibility and bid-process integrity.",
+    "areaMeasured": "Third-party access governance and capital project IP protection.",
+    "ifCorrect": "Shows structured evidence handling, legal alignment, and capital project IP protection.",
+    "ifWrong": "Indicates impulsive contractor access revocation or failure to preserve evidence for legal proceedings."
+  },
+  {
+    "id": 9,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupts the E&PM project collaboration and scheduling platform during a critical commissioning phase of a major capital project.",
+    "steps": [
+      "Notify Corporate Cybersecurity and activate the cyber incident response process; assess commissioning timeline risk.",
+      "Implement manual project coordination procedures: offline scheduling, direct contractor communication, and manual progress tracking.",
+      "Communicate proactively with EPC contractors and executive sponsors on platform outage, impact, and contingency measures."
+    ],
+    "rationale": "NIST Recover functions require validated restoration; manual continuity during commissioning protects capital project milestones and EPC contractor coordination.",
+    "areaMeasured": "Capital project continuity and commissioning recovery governance.",
+    "ifCorrect": "Shows balanced recovery thinking with capital project focus and contractor communication.",
+    "ifWrong": "Indicates commissioning paralysis, contractor communication avoidance, or premature platform reconnection."
+  },
+  {
+    "id": 10,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "The EDMS is restored after a malware incident. E&PM engineers need immediate access to submit regulatory permit applications requiring engineering drawings.",
+    "steps": [
+      "Ensure Corporate Cybersecurity completes forensic validation before EDMS access is reauthorized.",
+      "Validate that engineering document integrity, access controls, and version-control audit trails have been fully restored.",
+      "Conduct controlled access testing with engineering teams before full EDMS reactivation."
+    ],
+    "rationale": "NIST recovery guidance requires independent validation before reactivation; premature EDMS access risks corrupted engineering drawings or unauthorized project-data access.",
+    "areaMeasured": "Separation of duties and safe EDMS restoration.",
+    "ifCorrect": "Shows understanding of dual validation (Cyber + Engineering) before EDMS reactivation.",
+    "ifWrong": "Suggests unsafe EDMS reconnection driven by regulatory permit deadline pressure without cyber validation."
+  },
+  {
+    "id": 11,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "Following a ransomware incident affecting E&PM project systems, the Chief Projects Officer requests a post-incident review to assess capital project impact and strengthen resilience.",
+    "steps": [
+      "Confirm that restored E&PM systems have passed integrity validation before convening the review.",
+      "Monitor E&PM systems for residual malware indicators and abnormal project-data access post-recovery.",
+      "Conduct a governance review with Cybersecurity, BC/DR, and E&PM Leadership to evaluate capital project impact and recovery effectiveness."
+    ],
+    "rationale": "NIST Recover and Improve practices require secure restoration validation before governance review; lessons learned drive long-term capital project resilience.",
+    "areaMeasured": "Post-incident governance and E&PM learning culture.",
+    "ifCorrect": "Shows maturity in structured post-incident review and capital project resilience improvement.",
+    "ifWrong": "Indicates lack of accountability, siloed thinking, or skipping restoration validation before review."
+  },
+  {
+    "id": 12,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupted engineering design submissions and regulatory permit applications during a critical capital project approval phase.",
+    "steps": [
+      "Activate crisis communication structure; align E&PM and Executive leadership on impact and recovery plan.",
+      "Brief EPC contractors, regulatory liaisons, and project sponsors with consistent messaging on submission delays and mitigation actions.",
+      "Communicate proactively with regulatory authorities regarding submission delays and request extensions where applicable."
+    ],
+    "rationale": "NIST guidance requires governance and situational awareness first, then internal alignment, external communication, and post-incident improvement.",
+    "areaMeasured": "Regulatory submission continuity and capital project crisis governance.",
+    "ifCorrect": "Shows strong crisis communication and regulatory-submission governance during a cyber incident.",
+    "ifWrong": "Indicates regulatory and capital project risk, or avoidance of proactive regulator communication."
+  }
+]

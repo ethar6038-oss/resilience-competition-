@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "domain": "Prevention & Protection",
+    "scenario": "An OT security audit of Polymers SBU plants reveals that process control systems are running end-of-life operating systems with no patch management program.",
+    "steps": [
+      "Escalate to SBU Plant Leadership and Corporate Cybersecurity; direct immediate risk assessment and compensating controls.",
+      "Conduct a rapid inventory of all end-of-life OT systems across Polymers SBU plants.",
+      "Implement compensating controls: network isolation, enhanced monitoring, and restricted remote-access for unpatched systems."
+    ],
+    "rationale": "NIST Protect requires vulnerability management for OT environments; end-of-life systems represent critical unpatched vulnerabilities in polymer manufacturing.",
+    "areaMeasured": "OT vulnerability management and patch-governance maturity.",
+    "ifCorrect": "Shows alignment with OT security standards and proactive risk-mitigation governance.",
+    "ifWrong": "Indicates fragmented OT patch management or underestimation of end-of-life system risk."
+  },
+  {
+    "id": 2,
+    "domain": "Prevention & Protection",
+    "scenario": "A third-party logistics provider used by the Polymers SBU reports that SABIC shipment data — including customer names, product grades, and delivery schedules — was exposed through their unsecured portal.",
+    "steps": [
+      "Notify Corporate Cybersecurity and SBU Leadership; instruct the logistics provider to immediately secure or restrict the exposed portal.",
+      "Preserve evidence of exposure; assess what shipment data was exposed and which customers are affected.",
+      "Evaluate regulatory and customer-notification obligations arising from the exposure."
+    ],
+    "rationale": "Third-party logistics data exposures create customer trust, regulatory, and competitive risks; NIST Govern and Protect require structured vendor-security governance.",
+    "areaMeasured": "Third-party information security and logistics vendor governance.",
+    "ifCorrect": "Shows understanding of vendor-security risks and the need for contractual security standards.",
+    "ifWrong": "Indicates overreliance on vendor trust without security governance or contractual requirements."
+  },
+  {
+    "id": 3,
+    "domain": "Prevention & Protection",
+    "scenario": "A Polymers SBU commercial manager discovers that customer pricing agreements and volume contracts are stored in an unprotected shared drive accessible to all SBU staff.",
+    "steps": [
+      "Notify SBU Leadership and Corporate Cybersecurity; restrict access to pricing and contract data immediately.",
+      "Audit access rights to commercial data shared drives; identify all users with unnecessary access.",
+      "Implement need-to-know access controls for sensitive pricing and contract information."
+    ],
+    "rationale": "NIST Protect requires need-to-know access for sensitive commercial information; unrestricted access to pricing data creates insider-threat and competitive-intelligence risk.",
+    "areaMeasured": "Commercial data classification and access-control governance.",
+    "ifCorrect": "Shows alignment with need-to-know principles and commercial information-security governance.",
+    "ifWrong": "Indicates underestimation of commercial data sensitivity or failure to enforce access controls."
+  },
+  {
+    "id": 4,
+    "domain": "Prevention & Protection",
+    "scenario": "Phishing simulation results show that 36% of Polymers SBU commercial and technical staff submitted credentials, including R&D and sales personnel with access to proprietary formulations.",
+    "steps": [
+      "Report findings to SBU Leadership and Corporate Cybersecurity; escalate as an IP and commercial-data risk.",
+      "Analyze results by role to identify highest-risk R&D and commercial users.",
+      "Mandate targeted security awareness training with Polymers SBU-specific phishing and IP-protection scenarios."
+    ],
+    "rationale": "NIST Protect requires continuous awareness; high phishing rates in R&D and commercial roles create elevated IP exfiltration risk requiring structured intervention.",
+    "areaMeasured": "Security awareness maturity and IP human-risk governance.",
+    "ifCorrect": "Shows structured approach to reducing IP human-risk through training and technical controls.",
+    "ifWrong": "Indicates dismissal of awareness gaps or over-reliance on technical controls without addressing human risk."
+  },
+  {
+    "id": 5,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A cyber attack disrupts the Polymers SBU's production planning system, halting scheduling for polymer compounding and pelletizing lines across multiple sites.",
+    "steps": [
+      "Notify Corporate Cybersecurity, Polymers SBU Leadership, and SABIC Executive Leadership; activate the cyber crisis escalation process.",
+      "Preserve forensic evidence, isolate the production planning system, and suspend automated feeds to ERP and MES.",
+      "Determine the scope of system compromise and assess downstream impact on customer order fulfillment."
+    ],
+    "rationale": "NIST incident-response principles: governance → containment → investigation → communication. Production planning disruption impacts customer commitments and supply-chain reliability.",
+    "areaMeasured": "Executive escalation discipline and production-system breach governance.",
+    "ifCorrect": "Shows strong understanding of OT/IT breach protocols and Cybersecurity-led assessment.",
+    "ifWrong": "Indicates weak escalation culture, underestimation of supply-chain impact, or bypassing Cybersecurity authority."
+  },
+  {
+    "id": 6,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "Ransomware encrypts the Polymers SBU's quality management system (QMS), locking access to product specifications, test results, and customer certifications.",
+    "steps": [
+      "Notify Corporate Cybersecurity; isolate the QMS and halt automated quality-data feeds.",
+      "Assess which customer certifications and product specifications are time-critical; implement manual quality-recording procedures.",
+      "Determine whether proprietary polymer formulations or customer specification data were accessed or exfiltrated."
+    ],
+    "rationale": "QMS compromise threatens regulatory compliance and customer trust; NIST Respond/Recover requires containment, validation, and customer notification where data exposure is confirmed.",
+    "areaMeasured": "Quality-system resilience and customer-data breach governance.",
+    "ifCorrect": "Shows understanding of QMS risks, regulatory obligations, and customer-notification requirements.",
+    "ifWrong": "Suggests rushing QMS restoration without forensic validation or ignoring customer-data exposure."
+  },
+  {
+    "id": 7,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "A DDoS attack disrupts the Polymers SBU customer portal, blocking order placement and technical data-sheet access for global customers.",
+    "steps": [
+      "Engage Cybersecurity and DDoS mitigation providers immediately.",
+      "Activate crisis-management governance with SBU and Executive leadership.",
+      "Implement alternate customer-order and technical-support channels to maintain business continuity."
+    ],
+    "rationale": "Customer portal outages directly impact order intake and customer satisfaction; NIST Respond requires command structure, continuity, and validated recovery.",
+    "areaMeasured": "Leadership decision-making under pressure and customer-portal continuity.",
+    "ifCorrect": "Shows balanced thinking: Cybersecurity engagement with customer-service continuity.",
+    "ifWrong": "Indicates reactive behavior, customer-service paralysis, or bypassing Cybersecurity governance."
+  },
+  {
+    "id": 8,
+    "domain": "Crisis Management During Cyber Incidents",
+    "scenario": "R&D logs identify unauthorized access to the Polymers SBU's proprietary polymer formulation database linked to a departing scientist's account.",
+    "steps": [
+      "Escalate confidentially to Corporate Cybersecurity, Legal, HR, and SBU Leadership.",
+      "Preserve access logs, file-transfer records, and endpoint evidence.",
+      "Investigate the scope and extent of formulation data accessed; assess IP exfiltration risk."
+    ],
+    "rationale": "IP exfiltration by departing employees requires evidence preservation and governance before containment to protect legal defensibility and competitive IP.",
+    "areaMeasured": "IP protection and insider-risk governance in R&D environments.",
+    "ifCorrect": "Shows structured evidence handling, legal alignment, and polymer IP protection response.",
+    "ifWrong": "Indicates impulsive account termination or failure to preserve evidence for IP investigation."
+  },
+  {
+    "id": 9,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident disrupts the Polymers SBU order management system, halting order processing and customer fulfillment for specialty polymer grades.",
+    "steps": [
+      "Notify Corporate Cybersecurity and activate the cyber incident response process; isolate the order management system.",
+      "Assess impact on order pipeline and customer fulfillment; implement manual order-processing procedures for priority customers.",
+      "Communicate proactively with affected customers on order delays and alternative fulfillment options."
+    ],
+    "rationale": "NIST Recover functions require validated restoration; manual continuity protects customer relationships during recovery.",
+    "areaMeasured": "Customer-fulfillment continuity and order-management recovery governance.",
+    "ifCorrect": "Shows balanced recovery thinking with customer-centric focus.",
+    "ifWrong": "Indicates customer communication avoidance, premature system reconnection, or operational paralysis."
+  },
+  {
+    "id": 10,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "The Polymers SBU QMS is restored after a malware incident. The quality team wants immediate access to submit pending customer test reports.",
+    "steps": [
+      "Ensure Corporate Cybersecurity completes forensic validation before any QMS access is reauthorized.",
+      "Validate that quality data integrity, access controls, and audit trails have been fully restored.",
+      "Conduct controlled testing with quality and laboratory teams before production use is reactivated."
+    ],
+    "rationale": "NIST recovery guidance requires independent validation before reactivation; premature QMS access risks corrupted quality data or non-compliant customer certifications.",
+    "areaMeasured": "Separation of duties and safe QMS restoration.",
+    "ifCorrect": "Shows understanding of dual validation (Cyber + Quality) before QMS reactivation.",
+    "ifWrong": "Suggests unsafe QMS reconnection driven by customer pressure without cyber validation."
+  },
+  {
+    "id": 11,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "Following a ransomware incident affecting Polymers SBU systems, SBU leadership requests a post-incident review to assess business impact and strengthen resilience.",
+    "steps": [
+      "Confirm that restored systems have passed integrity validation before convening the review.",
+      "Monitor Polymers SBU systems for residual malware indicators and abnormal process behavior post-recovery.",
+      "Conduct a governance review with Cybersecurity, BC/DR, and SBU Leadership to evaluate impact and recovery effectiveness."
+    ],
+    "rationale": "NIST Recover and Improve practices require secure restoration validation before governance review; lessons learned drive long-term SBU resilience.",
+    "areaMeasured": "Post-incident governance and SBU learning culture.",
+    "ifCorrect": "Shows maturity in structured post-incident review and SBU resilience improvement.",
+    "ifWrong": "Indicates lack of accountability, siloed thinking, or skipping restoration validation before review."
+  },
+  {
+    "id": 12,
+    "domain": "Recovery & Sustaining After an Incident",
+    "scenario": "A cyber incident delays Polymers SBU shipments to automotive and packaging customers, triggering supply-chain penalties and customer escalations.",
+    "steps": [
+      "Activate crisis communication structure; align SBU and Supply Chain leadership on impact and recovery plan.",
+      "Brief internal stakeholders with consistent messaging on shipment delays, mitigation actions, and revised timelines.",
+      "Communicate proactively with affected customers and logistics partners on delays and recovery expectations."
+    ],
+    "rationale": "NIST guidance requires governance and situational awareness first, then internal alignment, external communication, and post-incident improvement.",
+    "areaMeasured": "Stakeholder communication and supply-chain continuity.",
+    "ifCorrect": "Shows strong crisis communication and customer-relationship management during a cyber incident.",
+    "ifWrong": "Indicates reputational and commercial risk, or avoidance of proactive customer communication."
+  }
+]
