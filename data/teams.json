@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Shared Services",
+    "slug": "shared-services",
+    "totalQuestions": 12
+  },
+  {
+    "name": "Manufacturing",
+    "slug": "manufacturing",
+    "totalQuestions": 12
+  },
+  {
+    "name": "Corporate Affairs",
+    "slug": "corporate-affairs",
+    "totalQuestions": 12
+  },
+  {
+    "name": "Corporate Finance",
+    "slug": "corporate-finance",
+    "totalQuestions": 12
+  },
+  {
+    "name": "Polymers SBU",
+    "slug": "polymers-sbu",
+    "totalQuestions": 12
+  },
+  {
+    "name": "Corporate Governance",
+    "slug": "corporate-governance",
+    "totalQuestions": 12
+  },
+  {
+    "name": "Corporate HR",
+    "slug": "corporate-hr",
+    "totalQuestions": 12
+  },
+  {
+    "name": "Chemicals SBU",
+    "slug": "chemicals-sbu",
+    "totalQuestions": 12
+  },
+  {
+    "name": "Internal Audit",
+    "slug": "internal-audit",
+    "totalQuestions": 12
+  },
+  {
+    "name": "E&PM",
+    "slug": "epm",
+    "totalQuestions": 12
+  },
+  {
+    "name": "T&I",
+    "slug": "ti",
+    "totalQuestions": 12
+  },
+  {
+    "name": "Agri-Nutrient",
+    "slug": "agri-nutrient",
+    "totalQuestions": 12
+  }
+]
