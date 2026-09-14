@@ -306,7 +306,27 @@ app.get('/team/:slug', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'team', 'index.html'));
 });
 
-app.get('/', (req, res) => {
+app.get('/debug-files', (req, res) => {
+  function walk(dir, base) {
+    const out = [];
+    try {
+      fs.readdirSync(dir).forEach(name => {
+        const full = path.join(dir, name);
+        const rel = path.join(base, name);
+        if (fs.statSync(full).isDirectory()) {
+          out.push(rel + '/');
+          out.push(...walk(full, rel));
+        } else {
+          out.push(rel);
+        }
+      });
+    } catch (e) {
+      out.push('ERROR reading ' + dir + ': ' + e.message);
+    }
+    return out;
+  }
+  res.json(walk(path.join(__dirname, 'public'), 'public'));
+});app.get('/', (req, res) => {
   res.redirect('/admin');
 });
 
