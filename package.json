@@ -1,0 +1,16 @@
+{
+  "name": "cyber-competition",
+  "version": "1.0.0",
+  "description": "12-team cybersecurity scenario-sequencing competition — admin dashboard + per-team competition pages.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cookie-parser": "^1.4.6"
+  }
+}
