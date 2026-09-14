@@ -329,7 +329,22 @@ app.get('/debug-files', (req, res) => {
 });app.get('/', (req, res) => {
   res.redirect('/admin');
 });
+console.log('=== RAILWAY FILE CHECK ===');
 
+const teamFile = path.join(__dirname, 'public', 'team', 'index.html');
+
+console.log('APP DIRECTORY:', __dirname);
+console.log('TEAM FILE PATH:', teamFile);
+console.log('TEAM FILE EXISTS:', fs.existsSync(teamFile));
+
+try {
+  console.log('PUBLIC FILES:', fs.readdirSync(path.join(__dirname, 'public')));
+  console.log('TEAM FILES:', fs.readdirSync(path.join(__dirname, 'public', 'team')));
+} catch (err) {
+  console.log('FILE CHECK ERROR:', err.message);
+}
+
+console.log('=== END FILE CHECK ===');
 app.listen(PORT, () => {
   console.log(`Cyber competition server running on port ${PORT}`);
 });
