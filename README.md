@@ -127,4 +127,4 @@ The `data/scenarios/*.json` files were generated from
 `Copy_of_Scenarios_Sep_2026.xlsx` (one sheet per team, columns: Domain,
 Scenario, Step 1, Step 2, Step 3, Rationale, Area measured, If correct, If
 wrong — Steps given in the *correct* order). If you get an updated Excel
-file, re-run the same extraction logic against it to refresh the JSON files.
+file, re-run the same extraction logic against it to refresh the JSON files. 
