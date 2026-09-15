@@ -411,8 +411,8 @@
   function renderGame(state) {
     renderShell(state);
     currentQuestionRef = state.question;
-    renderAssistBar(state);
     renderQuestionCard(state);
+renderAssistBar(state);
   }
 
   function renderCompletion(state) {
