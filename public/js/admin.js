@@ -46,29 +46,55 @@
         <div class="actions">
           <button class="btn btn-primary" data-action="reveal">Get link</button>
           <button class="btn btn-orange" data-action="copy">Copy</button>
-          <span class="copied-flag">Copied</span>
-        </div>
-        <div class="link-reveal">${link}</div>
+          </div>
+<input type="text" class="link-reveal" readonly value="${link}" />
       `;
       card.querySelector('[data-action="reveal"]').addEventListener('click', () => {
         card.querySelector('.link-reveal').classList.toggle('show');
       });
-      card.querySelector('[data-action="copy"]').addEventListener('click', async () => {
-        card.querySelector('.link-reveal').classList.add('show');
-        try {
-          await navigator.clipboard.writeText(link);
-        } catch (e) {
-          const ta = document.createElement('textarea');
-          ta.value = link;
-          document.body.appendChild(ta);
-          ta.select();
-          document.execCommand('copy');
-          document.body.removeChild(ta);
-        }
-        const flag = card.querySelector('.copied-flag');
-        flag.classList.add('show');
-        setTimeout(() => flag.classList.remove('show'), 1400);
-      });
+      const linkInput = card.querySelector('.link-reveal');
+const copyBtn = card.querySelector('[data-action="copy"]');
+
+linkInput.addEventListener('click', () => {
+  linkInput.select();
+});
+
+copyBtn.addEventListener('click', async () => {
+  linkInput.classList.add('show');
+
+  let copied = false;
+
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(link);
+      copied = true;
+    }
+  } catch (e) {
+    copied = false;
+  }
+
+  if (!copied) {
+    try {
+      linkInput.focus();
+      linkInput.select();
+      linkInput.setSelectionRange(0, link.length);
+      copied = document.execCommand('copy');
+    } catch (e) {
+      copied = false;
+    }
+  }
+
+  copyBtn.textContent = copied ? 'Copied!' : 'Select & copy below';
+
+  setTimeout(() => {
+    copyBtn.textContent = 'Copy';
+  }, 1800);
+
+  if (!copied) {
+    linkInput.focus();
+    linkInput.select();
+  }
+});
       grid.appendChild(card);
     });
   }
