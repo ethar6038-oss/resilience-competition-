@@ -44,23 +44,16 @@
         <div class="meta">Loading progress…</div>
         <div class="progress-bar"><span style="width:0%"></span></div>
         <div class="actions">
-          <button class="btn btn-primary" data-action="reveal">Get link</button>
-          <button class="btn btn-orange" data-action="copy">Copy</button>
-          </div>
-<input type="text" class="link-reveal" readonly value="${link}" />
+  <a class="btn btn-primary" href="${link}" target="_blank">Open team link</a>
+  <button type="button" class="btn btn-orange" data-action="copy">Copy link</button>
+</div>
+<input type="text" class="link-reveal show" readonly value="${link}" />
       `;
       const linkInput = card.querySelector('.link-reveal');
-const revealBtn = card.querySelector('[data-action="reveal"]');
+
 const copyBtn = card.querySelector('[data-action="copy"]');
 
-revealBtn.addEventListener('click', () => {
-  linkInput.classList.toggle('show');
 
-  if (linkInput.classList.contains('show')) {
-    linkInput.focus();
-    linkInput.select();
-  }
-});
 
 linkInput.addEventListener('click', () => {
   linkInput.select();
