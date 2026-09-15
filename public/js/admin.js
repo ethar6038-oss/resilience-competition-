@@ -49,11 +49,18 @@
           </div>
 <input type="text" class="link-reveal" readonly value="${link}" />
       `;
-      card.querySelector('[data-action="reveal"]').addEventListener('click', () => {
-        card.querySelector('.link-reveal').classList.toggle('show');
-      });
       const linkInput = card.querySelector('.link-reveal');
+const revealBtn = card.querySelector('[data-action="reveal"]');
 const copyBtn = card.querySelector('[data-action="copy"]');
+
+revealBtn.addEventListener('click', () => {
+  linkInput.classList.toggle('show');
+
+  if (linkInput.classList.contains('show')) {
+    linkInput.focus();
+    linkInput.select();
+  }
+});
 
 linkInput.addEventListener('click', () => {
   linkInput.select();
