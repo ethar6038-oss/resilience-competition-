@@ -362,10 +362,16 @@ app.get('/api/admin/progress', (req, res) => {
       };
     }
 
-    const s = entries.sort(
-      (a, b) =>
-        b.createdAt - a.createdAt
-    )[0];
+    const s = entries.sort((a, b) => {
+  const answeredA = a.questions.filter(q => q.attempted).length;
+  const answeredB = b.questions.filter(q => q.attempted).length;
+
+  if (answeredB !== answeredA) {
+    return answeredB - answeredA;
+  }
+
+  return b.createdAt - a.createdAt;
+})[0];
 
     const answered =
       s.questions.filter(
