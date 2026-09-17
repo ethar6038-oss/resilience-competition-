@@ -393,6 +393,7 @@ app.get('/api/admin/progress', (req, res) => {
         s.completed
           ? null
           : s.currentIndex + 1,
+      hiddenUsed: s.hiddenUsed,
 
       hints: {
         used: s.hintsUsed,
