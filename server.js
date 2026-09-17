@@ -154,6 +154,7 @@ function newSession(slug) {
 
     hiddenScenario,
     hiddenUsed: false,
+    q4SecondAttempt: false,
   };
 }
 
@@ -603,47 +604,44 @@ app.post('/api/team/:slug/answer', (req, res) => {
   // --------------------------------------------------
 
   if (
-    index === 3 &&
-    !fullyCorrect
-  ) {
-    const oldQ3 =
-      s.questions[2];
+  index === 3 &&
+  !fullyCorrect &&
+  !s.q4SecondAttempt
+) {
+  const oldQ3 = s.questions[2];
 
-    if (oldQ3.attempted) {
-      s.totalScore -=
-        oldQ3.pointsEarned;
-    }
+  // Remove the original Q3 score
+  if (oldQ3.attempted) {
+    s.totalScore -= oldQ3.pointsEarned;
+  }
 
-    const replacement =
-      buildQuestionObject(
-        s.hiddenScenario
-      );
+  // Replace Q3 with hidden Q12
+  const replacement =
+    buildQuestionObject(
+      s.hiddenScenario
+    );
 
-    // Hidden scenario becomes
-    // the new visible Scenario 3.
-    replacement.domain =
-      oldQ3.domain;
+  replacement.domain =
+    oldQ3.domain;
 
-    s.questions[2] =
-      replacement;
+  s.questions[2] =
+    replacement;
 
-    s.hiddenUsed = true;
+  s.hiddenUsed = true;
 
-    // IMPORTANT:
-    // No previous Q3 assistance remains
-    // when the team returns to new Q3.
-    delete s.hintsGivenFor[2];
-    delete s.revealsGivenFor[2];
+  // Remove previous Q3 assistance
+  delete s.hintsGivenFor[2];
+  delete s.revealsGivenFor[2];
 
-    // Q4 does not keep points
-    // from this failed attempt.
-    s.totalScore -=
-      pointsEarned;
+  // Remove points from the failed first Q4 attempt
+  s.totalScore -=
+    pointsEarned;
 
-    resetQuestion(q);
+  resetQuestion(q);
 
-    s.currentIndex = 2;
-    sentBackTo = 2;
+  // Return to hidden Q3
+  s.currentIndex = 2;
+  sentBackTo = 2;
   }
 
   // --------------------------------------------------
@@ -689,6 +687,20 @@ app.post('/api/team/:slug/answer', (req, res) => {
     s.currentIndex = 8;
   }
 
+    // -------- Hidden Q3 completed --------
+// After answering the replacement Q3,
+// return to Q4 for one final attempt.
+else if (
+  index === 2 &&
+  s.hiddenUsed &&
+  !s.q4SecondAttempt
+) {
+  s.q4SecondAttempt = true;
+
+  // Q4 was reset after its first failed attempt.
+  s.currentIndex = 3;
+  sentBackTo = 3;
+}
   // ---------- Final question ----------
 
   else if (
