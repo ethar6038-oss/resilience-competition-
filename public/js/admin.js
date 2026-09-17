@@ -22,9 +22,34 @@
         const pct = p.total ? Math.round((p.answered / p.total) * 100) : 0;
         if (bar) bar.style.width = pct + '%';
         if (meta) {
-          meta.textContent = p.started
-            ? `${p.answered}/${p.total} answered · ${p.score} pts${p.completed ? ' · Completed' : ''}`
-            : 'Not started yet';
+  if (!p.started) {
+    meta.innerHTML = `
+      <div>Not started yet</div>
+      <div class="admin-details">
+        Current Question: —<br>
+        💡 Hints: 0/3 · 👁 Reveals: 0/2 · ☎ Friend: 0/1<br>
+        🔀 Hidden Q12: Not used
+      </div>
+    `;
+  } else {
+    meta.innerHTML = `
+      <div>
+        ${p.answered}/${p.total} answered · ${p.score} pts
+        ${p.completed ? ' · Completed' : ''}
+      </div>
+
+      <div class="admin-details">
+        Current Question:
+        ${p.completed ? 'Completed' : `Q${p.currentQuestion}`}
+        <br>
+        💡 Hints: ${p.hints.used}/${p.hints.max}
+        · 👁 Reveals: ${p.reveals.used}/${p.reveals.max}
+        · ☎ Friend: ${p.friend.used}/${p.friend.max}
+        <br>
+        🔀 Hidden Q12: ${p.hiddenUsed ? 'Used' : 'Not used'}
+      </div>
+    `;
+  }
         }
       });
     } catch (e) { /* non-fatal */ }
