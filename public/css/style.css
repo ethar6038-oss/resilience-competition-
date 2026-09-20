@@ -668,3 +668,378 @@ footer.foot {
   align-items: center;
   justify-content: center;
 }
+
+/* =========================================================
+   LIGHT CYBER THEME + LIVE LEADERBOARD
+   ========================================================= */
+
+:root {
+  --navy-950: #eef8fc;
+  --navy-900: #f5fbfd;
+  --navy-800: #ffffff;
+
+  --ink-0: #12324a;
+  --ink-100: #23465f;
+  --ink-300: #567386;
+  --ink-500: #7890a0;
+
+  --cyan-300: #38b9d6;
+  --cyan-400: #16a8ca;
+  --cyan-500: #0788b2;
+
+  --orange-400: #f5a623;
+  --orange-500: #ee8f18;
+  --orange-600: #df7810;
+}
+
+/* ---------- Main background ---------- */
+
+body {
+  background:
+    radial-gradient(
+      900px 500px at 90% -10%,
+      rgba(22,168,202,0.15),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #f7fcfe 0%, #edf7fb 100%);
+  color: var(--ink-100);
+}
+
+/* ---------- Top bar ---------- */
+
+.topbar {
+  background: rgba(255,255,255,0.78);
+  border-bottom: 1px solid rgba(7,136,178,0.12);
+  border-radius: 0 0 18px 18px;
+}
+
+.brandmark .label {
+  color: #12324a;
+}
+
+.brandmark .label small {
+  color: #7890a0;
+}
+
+/* ---------- Page headings ---------- */
+
+.page-head h1 {
+  color: #12324a;
+}
+
+.page-head p {
+  color: #567386;
+}
+
+/* ---------- Team cards ---------- */
+
+.team-card {
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(7,136,178,0.14);
+  box-shadow: 0 8px 28px rgba(17,84,112,0.07);
+}
+
+.team-card:hover {
+  border-color: rgba(22,168,202,0.45);
+  box-shadow: 0 12px 32px rgba(17,84,112,0.12);
+}
+
+.team-card h3 {
+  color: #12324a;
+}
+
+.team-card .meta,
+.admin-details {
+  color: #567386;
+}
+
+.team-card .idx {
+  color: #0788b2;
+}
+
+/* ---------- Progress ---------- */
+
+.progress-bar {
+  background: #dceef4;
+}
+
+.progress-bar span {
+  background: linear-gradient(
+    90deg,
+    #16a8ca,
+    #38b9d6,
+    #f5a623
+  );
+}
+
+/* ---------- Buttons ---------- */
+
+.btn-primary {
+  background: linear-gradient(120deg, #16a8ca, #0788b2);
+  color: white;
+}
+
+.btn-orange {
+  background: linear-gradient(120deg, #f5a623, #ee8f18);
+  color: white;
+}
+
+.btn-ghost {
+  background: white;
+  color: #0788b2;
+  border: 1px solid rgba(7,136,178,0.25);
+}
+
+/* ---------- Team link field ---------- */
+
+.link-reveal {
+  background: #f4fafc;
+  border-color: rgba(7,136,178,0.25);
+  color: #0788b2;
+}
+
+/* ---------- Competition panels ---------- */
+
+.hero-panel,
+.question-card,
+.completion-panel {
+  background: rgba(255,255,255,0.94);
+  border-color: rgba(7,136,178,0.15);
+  box-shadow: 0 8px 28px rgba(17,84,112,0.07);
+}
+
+.team-name,
+.q-scenario,
+.completion-panel h1 {
+  color: #12324a;
+}
+
+/* ---------- Domain / question progress ---------- */
+
+.domain-step {
+  background: white;
+  border-color: rgba(7,136,178,0.14);
+}
+
+.domain-step.active {
+  background: rgba(22,168,202,0.09);
+  border-color: #16a8ca;
+}
+
+.domain-step.done {
+  background: rgba(52,190,145,0.08);
+  border-color: rgba(52,190,145,0.5);
+}
+
+/* ---------- Answer steps ---------- */
+
+.step-item {
+  background: #f8fcfd;
+  border-color: rgba(7,136,178,0.14);
+  color: #23465f;
+}
+
+.step-item:hover {
+  background: #eef9fc;
+  border-color: #38b9d6;
+}
+
+/* ---------- Assistance tools ---------- */
+
+.assist-btn {
+  background: white;
+  border-color: rgba(7,136,178,0.16);
+  color: #23465f;
+  box-shadow: 0 4px 14px rgba(17,84,112,0.05);
+}
+
+.assist-btn:hover:not(:disabled) {
+  border-color: #16a8ca;
+  background: #f0fafc;
+}
+
+.assist-btn .count {
+  color: #0788b2;
+}
+
+/* =========================================================
+   LIVE LEADERBOARD
+   ========================================================= */
+
+.leaderboard-section {
+  margin: 0 0 34px;
+  padding: 26px;
+  background: rgba(255,255,255,0.94);
+  border: 1px solid rgba(7,136,178,0.14);
+  border-radius: 18px;
+  box-shadow: 0 10px 32px rgba(17,84,112,0.08);
+}
+
+.leaderboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.leaderboard-header h1 {
+  margin: 0 0 5px;
+  color: #12324a;
+  font-size: 25px;
+}
+
+.leaderboard-header p {
+  margin: 0;
+  color: #7890a0;
+  font-size: 13px;
+}
+
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: rgba(52,190,145,0.10);
+  color: #238b68;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #34be91;
+  box-shadow: 0 0 0 4px rgba(52,190,145,0.12);
+  animation: livePulse 1.6s infinite;
+}
+
+@keyframes livePulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: .45;
+    transform: scale(.8);
+  }
+}
+
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 55px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: #f7fbfd;
+  border: 1px solid rgba(7,136,178,0.10);
+  border-radius: 12px;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.leaderboard-row:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(17,84,112,0.08);
+}
+
+.leaderboard-row.top-three {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(22,168,202,0.09),
+      rgba(255,255,255,0.95)
+    );
+  border-color: rgba(22,168,202,0.22);
+}
+
+.leaderboard-rank {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #0788b2;
+}
+
+.leaderboard-team {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.leaderboard-team strong {
+  color: #12324a;
+  font-size: 14px;
+}
+
+.leaderboard-team span {
+  color: #7890a0;
+  font-size: 11px;
+}
+
+.leaderboard-score {
+  color: #0788b2;
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.leaderboard-score span {
+  margin-left: 3px;
+  color: #7890a0;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* ---------- Modal ---------- */
+
+.modal-box {
+  background: white;
+  border-color: rgba(7,136,178,0.15);
+}
+
+.modal-box h4 {
+  color: #12324a;
+}
+
+.modal-box p {
+  color: #567386;
+}
+
+/* ---------- Footer ---------- */
+
+footer.foot {
+  color: #7890a0;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 560px) {
+  .leaderboard-section {
+    padding: 18px;
+  }
+
+  .leaderboard-header {
+    align-items: flex-start;
+  }
+
+  .leaderboard-row {
+    grid-template-columns: 42px 1fr auto;
+    padding: 12px 10px;
+    gap: 9px;
+  }
+
+  .leaderboard-score {
+    font-size: 17px;
+  }
+}
