@@ -265,6 +265,32 @@
     document.getElementById('resultWrap').dataset.filled = '1';
     renderNextButtonFromResult(result, index);
     updateScoreChip(result.totalScore);
+    // Answer feedback animation
+if (result.pointsEarned === 15) {
+  const thumbs = document.createElement('div');
+  thumbs.className = 'answer-thumbs-up';
+  thumbs.textContent = '👍';
+  document.body.appendChild(thumbs);
+
+  setTimeout(() => {
+    thumbs.remove();
+  }, 1300);
+
+} else {
+  const wrongX = document.createElement('div');
+  wrongX.className = 'answer-wrong-x';
+  wrongX.textContent = '✕';
+  document.body.appendChild(wrongX);
+
+  document.body.classList.remove('wrong-answer-flash');
+  void document.body.offsetWidth;
+  document.body.classList.add('wrong-answer-flash');
+
+  setTimeout(() => {
+    wrongX.remove();
+    document.body.classList.remove('wrong-answer-flash');
+  }, 1300);
+}
   }
 
   function updateScoreChip(score) {
