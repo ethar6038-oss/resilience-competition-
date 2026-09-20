@@ -1043,3 +1043,107 @@ footer.foot {
     font-size: 17px;
   }
 }
+
+/* =========================================================
+   ANSWER FEEDBACK ANIMATIONS
+   ========================================================= */
+
+/* Correct answer — small thumbs up from the side */
+.answer-thumbs-up {
+  position: fixed;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%) translateX(100px);
+  font-size: 54px;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  animation: thumbsUpPop 1.2s ease forwards;
+}
+
+@keyframes thumbsUpPop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) translateX(100px) scale(.7);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0) scale(1.08);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) translateX(40px) scale(.9);
+  }
+}
+
+
+/* Wrong answer — red page flash */
+body.wrong-answer-flash::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(220, 38, 38, 0.18);
+  z-index: 9998;
+  pointer-events: none;
+  animation: wrongPageFlash .9s ease-out forwards;
+}
+
+@keyframes wrongPageFlash {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* Wrong X */
+.answer-wrong-x {
+  position: fixed;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%) translateX(100px);
+  font-family: var(--font-display);
+  font-size: 58px;
+  font-weight: 700;
+  color: #dc2626;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  animation: wrongXPop 1.2s ease forwards;
+}
+
+@keyframes wrongXPop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) translateX(100px) scale(.7);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0) scale(1.08);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) translateX(40px) scale(.9);
+  }
+}
