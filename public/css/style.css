@@ -653,3 +653,18 @@ footer.foot {
   .question-card { padding: 20px; }
   .completion-panel .final-score { font-size: 42px; }
 }
+
+/* Admin report buttons */
+.admin-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.admin-actions a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
