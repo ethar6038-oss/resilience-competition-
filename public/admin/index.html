@@ -15,7 +15,17 @@
         <span class="dot"></span>
         <span class="label">Cybersecurity Competition<small>Administrator Dashboard</small></span>
       </div>
-      <button class="btn btn-ghost" id="refreshBtn">Refresh progress</button>
+      <div class="admin-actions">
+  <button class="btn btn-ghost" id="refreshBtn">Refresh progress</button>
+
+  <a class="btn btn-primary" href="/api/admin/report.xlsx" download>
+    Download Excel Report
+  </a>
+
+  <a class="btn btn-orange" href="/api/admin/report.pdf" download>
+    Download PDF Report
+  </a>
+      </div>
     </div>
 
     <div class="page-head">
