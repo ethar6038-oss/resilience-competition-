@@ -1,6 +1,7 @@
 (function () {
   const grid = document.getElementById('teamGrid');
   const refreshBtn = document.getElementById('refreshBtn');
+  const leaderboard = document.getElementById('leaderboard');
   let teams = [];
 
   async function loadTeams() {
@@ -14,6 +15,7 @@
     try {
       const res = await fetch('/api/admin/progress');
       const progress = await res.json();
+      renderLeaderboard(progress);
       progress.forEach(p => {
         const card = document.querySelector(`.team-card[data-slug="${p.slug}"]`);
         if (!card) return;
@@ -54,7 +56,40 @@
       });
     } catch (e) { /* non-fatal */ }
   }
+function renderLeaderboard(progress) {
+  if (!leaderboard) return;
 
+  const ranked = [...progress].sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    return b.answered - a.answered;
+  });
+
+  leaderboard.innerHTML = ranked.map((team, index) => {
+    const rank = index + 1;
+
+    let medal = '';
+    if (rank === 1) medal = '🥇';
+    else if (rank === 2) medal = '🥈';
+    else if (rank === 3) medal = '🥉';
+
+    return `
+      <div class="leaderboard-row ${rank <= 3 ? 'top-three' : ''}">
+        <div class="leaderboard-rank">
+          ${medal || rank}
+        </div>
+
+        <div class="leaderboard-team">
+          <strong>${team.name}</strong>
+          <span>${team.answered}/${team.total} questions answered</span>
+        </div>
+
+        <div class="leaderboard-score">
+          ${team.score} <span>pts</span>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
   function render() {
     grid.innerHTML = '';
     teams.forEach((t, i) => {
